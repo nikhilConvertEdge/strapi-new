@@ -778,6 +778,8 @@ export interface ApiCourseTemplate1CourseTemplate1
     > &
       Schema.Attribute.Private;
     logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    masterCourse: Schema.Attribute.String &
+      Schema.Attribute.CustomField<'plugin::custom-dropdown.custom-dropdown'>;
     order: Schema.Attribute.Integer;
     prices: Schema.Attribute.Component<'component.course-price', true>;
     pricingInfo: Schema.Attribute.JSON;

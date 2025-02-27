@@ -172,7 +172,6 @@
       "type": "boolean",
       "default": false
     },
- 
     "country": {
       "type": "relation",
       "relation": "oneToOne",
@@ -182,6 +181,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::timezone.timezone"
+    },
+    "masterCourse": {
+      "type": "customField",
+      "customField": "plugin::custom-dropdown.custom-dropdown"
     }
   }
 }
