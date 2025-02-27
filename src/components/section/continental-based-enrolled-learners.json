@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_section_continental_based_enrolled_learners",
+  "info": {
+    "displayName": "continentalBasedEnrolledLearners",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "enrolledLearnerProfilePics": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "continent": {
+      "type": "enumeration",
+      "enum": [
+        "\"Africa\",",
+        "\"Asia\",",
+        "\"Europe\",",
+        "\"North America\",",
+        "\"South America\",",
+        "\"Australia\",",
+        "\"Antarctica\""
+      ]
+    },
+    "learnerCount": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    }
+  }
+}

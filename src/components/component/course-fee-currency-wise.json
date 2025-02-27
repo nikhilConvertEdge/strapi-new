@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_component_course_fee_currency_wises",
+  "info": {
+    "displayName": "Course Fee Currency Wise"
+  },
+  "options": {},
+  "attributes": {
+    "currency": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::currency.currency"
+    },
+    "isDefault": {
+      "type": "boolean",
+      "default": false
+    },
+    "price": {
+      "type": "integer"
+    },
+    "comparePrice": {
+      "type": "integer"
+    },
+    "asLowPerMonth": {
+      "type": "integer"
+    },
+    "offerPercentage": {
+      "type": "string"
+    }
+  }
+}

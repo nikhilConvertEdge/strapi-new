@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_landing_page_section_lp_horizontal_menus",
+  "info": {
+    "displayName": "LP Horizontal menu",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing-page-component.menu-bar-detail"
+    },
+    "downloadButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.download-button"
+    },
+    "scheduleButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.button-details"
+    }
+  }
+}

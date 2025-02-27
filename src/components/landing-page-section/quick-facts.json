@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_landing_page_section_lp_quick_facts",
+  "info": {
+    "displayName": "LP Quick Facts",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "facts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing-page-component.facts"
+    },
+    "replaceComponentTo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.course-template-1-components-dropdown"
+    }
+  }
+}

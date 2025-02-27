@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_section_get_certified_get_noticeds",
+  "info": {
+    "displayName": "Get certified Get noticed",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "certifiedBy": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.image-with-title",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_component_got_a_questions",
+  "info": {
+    "displayName": "Got A Question"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

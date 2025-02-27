@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_section_our_support_systems",
+  "info": {
+    "displayName": "Our Support System",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "specification": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.image-header-description",
+      "required": true
+    },
+    "experts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.support-team-details",
+      "required": true
+    }
+  }
+}

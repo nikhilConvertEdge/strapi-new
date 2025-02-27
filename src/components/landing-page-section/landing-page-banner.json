@@ -1,0 +1,70 @@
+{
+  "collectionName": "components_landing_page_section_lp_ct1_banners",
+  "info": {
+    "displayName": "LP CT1 Banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "enrolledLearnerProfilePics": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "enrolledLearners": {
+      "type": "string"
+    },
+    "authorizationLogo": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "authorizationTagLine": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.rating-details"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing-page-component.feature"
+    },
+    "viewButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.button-details"
+    },
+    "downloadButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.download-button"
+    },
+    "expertCallForm": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.expert-call-form"
+    },
+    "replaceComponentTo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.course-template-1-components-dropdown"
+    }
+  }
+}

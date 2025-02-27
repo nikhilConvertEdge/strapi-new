@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_component_professions",
+  "info": {
+    "displayName": "Professions"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

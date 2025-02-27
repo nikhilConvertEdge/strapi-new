@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_component_highlight_summaries",
+  "info": {
+    "displayName": "Highlight Summary"
+  },
+  "options": {},
+  "attributes": {
+    "careerTransitions": {
+      "type": "string",
+      "required": true
+    },
+    "careerTransitionTag": {
+      "type": "string",
+      "required": true
+    },
+    "avgSalaryHike": {
+      "type": "integer",
+      "required": true
+    },
+    "avgSalaryHikeTag": {
+      "type": "string",
+      "required": true
+    },
+    "highestSalaryHike": {
+      "type": "integer",
+      "required": true
+    },
+    "highestSalaryHikeTag": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

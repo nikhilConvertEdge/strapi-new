@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_section_exclusive_bonuses",
+  "info": {
+    "displayName": "Exclusive Bonuses",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "text"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "bonusDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.bonus-details"
+    },
+    "price": {
+      "type": "string"
+    }
+  }
+}

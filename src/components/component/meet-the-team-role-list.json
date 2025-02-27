@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_component_meet_the_team_role_lists",
+  "info": {
+    "displayName": "Meet The Team Role List"
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "users": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.meet-the-team-roles"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blog_section_learning_resourses",
+  "info": {
+    "displayName": "Learning Resourse"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "resources": {
+      "displayName": "Resource Details",
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-component.resource-details"
+    }
+  }
+}

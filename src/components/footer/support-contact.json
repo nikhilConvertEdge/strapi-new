@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_footer_support_contacts",
+  "info": {
+    "displayName": "Support Contact",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.contact",
+      "required": true
+    }
+  }
+}

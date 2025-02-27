@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blog_component_button_details",
+  "info": {
+    "displayName": "Button Details"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "redirectUrl": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "button",
+        "href"
+      ]
+    }
+  }
+}

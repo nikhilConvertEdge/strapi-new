@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_section_training_options",
+  "info": {
+    "displayName": "Training Options"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "enableGroupDiscussionTag": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

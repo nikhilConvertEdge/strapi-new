@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_component_career_success_story_companies",
+  "info": {
+    "displayName": "Career Success Story Company"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "role": {
+      "type": "string"
+    }
+  }
+}

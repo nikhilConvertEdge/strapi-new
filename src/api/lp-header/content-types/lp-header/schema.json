@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "lp_headers",
+  "info": {
+    "singularName": "lp-header",
+    "pluralName": "lp-headers",
+    "displayName": "LP Header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "menus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.header-item"
+    },
+    "saleBanner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.sale-banner"
+    },
+    "couponButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.coupon-button",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_component_support_team_details",
+  "info": {
+    "displayName": "Support team Details"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "designation": {
+      "type": "string"
+    },
+    "workedWith": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_blog_section_background_highlight_blocks",
+  "info": {
+    "displayName": "Background Highlight Block"
+  },
+  "options": {},
+  "attributes": { 
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

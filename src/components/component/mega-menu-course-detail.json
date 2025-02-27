@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_component_mega_menu_course_details",
+  "info": {
+    "displayName": "Mega Menu Course Detail"
+  },
+  "options": {},
+  "attributes": {
+    "enableNewFlag": {
+      "type": "boolean",
+      "default": false
+    },
+    "enableJobAssistance": {
+      "type": "boolean",
+      "default": false
+    },
+    "course": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course-template-1.course-template-1"
+    }
+  }
+}

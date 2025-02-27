@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "mega_menus",
+  "info": {
+    "singularName": "mega-menu",
+    "pluralName": "mega-menus",
+    "displayName": "Mega Menu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.mega-menu-course-category"
+    }
+  }
+}

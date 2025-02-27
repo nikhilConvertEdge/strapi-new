@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_section_courses_we_haves",
+  "info": {
+    "displayName": "Courses we have"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

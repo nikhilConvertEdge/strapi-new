@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pop_ups",
+  "info": {
+    "singularName": "pop-up",
+    "pluralName": "pop-ups",
+    "displayName": "Pop up",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "code": {
+      "type": "uid",
+      "required": true
+    },
+    "specification": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.pop-up-details"
+    }
+  }
+}

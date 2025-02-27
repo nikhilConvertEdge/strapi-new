@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_component_title_with_descriptions",
+  "info": {
+    "displayName": "Title With Description",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

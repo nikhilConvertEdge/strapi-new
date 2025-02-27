@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_section_project_management_teams",
+  "info": {
+    "displayName": "Project Management Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details",
+      "required": true
+    },
+    "discountTag": {
+      "type": "string"
+    },
+    "discountTagDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.discount-tag-details",
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "teams": {
+      "displayName": "Management Teams",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.management-teams",
+      "required": true
+    },
+    "upSkillTagLine": {
+      "type": "string",
+      "required": true
+    },
+    "teamHighlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.highlight-list",
+      "required": true
+    }
+  }
+}

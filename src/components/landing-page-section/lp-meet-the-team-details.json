@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_landing_page_section_lp_team_details",
+  "info": {
+    "displayName": "LP Meet The Team Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string"
+    },
+    "instructors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.meet-the-team-roles"
+    },
+    "achievements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-component.feature-with-icon"
+    },
+    "scheduleACallButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.button-details"
+    },
+    "passPercenatge": {
+      "type": "biginteger"
+    },
+    "passPercenatgeTitle": {
+      "type": "text"
+    },
+    "progressTagLine": {
+      "type": "text"
+    },
+    "replaceComponentTo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.course-template-1-components-dropdown"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_component_learning_path_steps",
+  "info": {
+    "displayName": "Learning Path Steps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

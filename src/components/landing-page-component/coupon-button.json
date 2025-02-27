@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_landing_page_component_coupon_buttons",
+  "info": {
+    "displayName": "Coupon Button",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "redirectUrl": {
+      "type": "string"
+    },
+    "couponCode": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "button",
+        "href"
+      ]
+    }
+  }
+}

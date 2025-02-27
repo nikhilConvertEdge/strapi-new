@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_section_review_details",
+  "info": {
+    "displayName": "Review Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "filteredOptions": {
+      "type": "json",
+      "required": true
+    },
+    "reviews": {
+      "displayName": "Reviews",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.reviews",
+      "required": true
+    }
+  }
+}

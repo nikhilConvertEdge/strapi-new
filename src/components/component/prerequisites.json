@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_component_prerequisites",
+  "info": {
+    "displayName": "Prerequisites"
+  },
+  "options": {},
+  "attributes": {
+    "prerequisite": {
+      "type": "string"
+    }
+  }
+}

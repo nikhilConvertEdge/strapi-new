@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_section_faq_details",
+  "info": {
+    "displayName": "FAQ Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "faqs": {
+      "displayName": "faqs",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.faqs",
+      "required": true
+    }
+  }
+}

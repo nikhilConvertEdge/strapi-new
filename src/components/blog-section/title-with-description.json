@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blog_section_title_with_descriptions",
+  "info": {
+    "displayName": "Title with Description",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "redirectedUrl": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "enableTitle": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  }
+}

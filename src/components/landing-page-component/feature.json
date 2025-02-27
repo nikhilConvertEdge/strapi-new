@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_landing_page_component_features",
+  "info": {
+    "displayName": "Feature"
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string"
+    }
+  }
+}

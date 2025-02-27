@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_component_highlight_lists",
+  "info": {
+    "displayName": "Highlight List"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "highlight": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

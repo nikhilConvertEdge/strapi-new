@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_blog_component_feature_with_icons",
+  "info": {
+    "displayName": "Feature With Icon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "featureTagline": {
+      "type": "text"
+    }
+  }
+}

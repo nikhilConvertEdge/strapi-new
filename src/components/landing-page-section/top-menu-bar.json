@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_landing_page_section_top_menu_bars",
+  "info": {
+    "displayName": "Top Menu Bar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing-page-component.menu-bar-detail"
+    }
+  }
+}

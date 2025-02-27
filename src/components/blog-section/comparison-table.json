@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blog_section_comparison_tables",
+  "info": {
+    "displayName": "Comparison Table"
+  },
+  "options": {},
+  "attributes": {
+    "comparison": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-section.comparison-table-details"
+    },
+    "layoutType": {
+      "type": "enumeration",
+      "enum": [
+        "PROS_CONS",
+        "GOAL_FOCUS"
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "global_accreditations",
+  "info": {
+    "singularName": "global-accreditation",
+    "pluralName": "global-accreditations",
+    "displayName": "Global Accreditation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

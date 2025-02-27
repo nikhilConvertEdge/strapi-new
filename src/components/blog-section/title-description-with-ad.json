@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_blog_section_title_description_with_ads",
+  "info": {
+    "displayName": "Title description with Ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "redirectedUrl": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description1": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "downloadToolkitAd": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-section.content-banner"
+    },
+    "description2": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

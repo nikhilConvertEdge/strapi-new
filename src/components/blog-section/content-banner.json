@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_blog_section_content_banners",
+  "info": {
+    "displayName": "CTA Content Block ",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "redirectedUrl": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.button-details"
+    }
+  }
+}

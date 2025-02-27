@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_component_rating_details",
+  "info": {
+    "displayName": "ratingDetails",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "noOfReviews": {
+      "type": "integer"
+    }
+  }
+}

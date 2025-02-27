@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_landing_page_component_remove_course_components",
+  "info": {
+    "displayName": "Remove Course Components"
+  },
+  "options": {},
+  "attributes": {
+    "removeCourseComponents": {
+      "type": "customField",
+      "options":  [
+        "ComponentSectionCt1Banner",
+        "ComponentComponentFlexiPassCard",
+        "ComponentSectionLeftSideBarMenus",
+        "ComponentComponentHighlightSummary",
+        "ComponentSectionHighlights",
+        "ComponentSectionWhyProfela",
+        "ComponentSectionCourseFee",
+        "ComponentSectionMeetTheTeam",
+        "ComponentComponentGotAQuestion",
+        "ComponentSectionReviewDetails",
+        "ComponentSectionSocialNetworkRatings",
+        "ComponentSectionCurriculum",
+        "ComponentSectionFaqDetails",
+        "ComponentComponentGotAQuestion",
+        "ComponentSectionCourseCertification",
+        "ComponentSectionPrerequisitesForTraining",
+        "ComponentSectionWhoShouldAttendCourse",
+        "ComponentSectionCertifiedProfessionals",
+        "ComponentSectionCertificationDetails",
+        "ComponentComponentGotAQuestion",
+        "ComponentSectionLearningPath",
+        "ComponentSectionProjectManagementTeam",
+        "ComponentSectionRelatedCourses",
+        "ComponentSectionTrendingCourses",
+        "ComponentSectionTrendingCoursesInOtherCities"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    }
+  }
+}

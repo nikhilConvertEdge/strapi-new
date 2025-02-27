@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "section.ct-2-banner",
+        "section.get-certified-get-noticed",
+        "section.courses-we-have",
+        "section.usp-s-or-why-us",
+        "section.superior-outcome",
+        "section.review-details",
+        "section.social-network-ratings",
+        "section.industry-leaders",
+        "section.enterprises-are-saying",
+        "section.our-support-system",
+        "section.learners-overthen-globe",
+        "component.got-a-question"
+      ]
+    }
+  }
+}

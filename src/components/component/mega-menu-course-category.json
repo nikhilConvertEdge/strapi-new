@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_component_mega__menu_categories",
+  "info": {
+    "displayName": "Mega Menu Course Category",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "courses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.mega-menu-course-detail",
+      "max": 3
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}

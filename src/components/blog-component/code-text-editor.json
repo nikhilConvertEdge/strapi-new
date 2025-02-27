@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blog_component_code_text_editors",
+  "info": {
+    "displayName": "Rich Editor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

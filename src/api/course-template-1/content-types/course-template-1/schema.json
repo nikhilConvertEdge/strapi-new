@@ -1,0 +1,187 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_template_1s",
+  "info": {
+    "singularName": "course-template-1",
+    "pluralName": "course-template-1s",
+    "displayName": "Course Template 1",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "global_accreditation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::global-accreditation.global-accreditation"
+    },
+    "isBestSeller": {
+      "type": "boolean",
+      "default": false
+    },
+    "isTrending": {
+      "type": "boolean",
+      "default": false
+    },
+    "isRecommended": {
+      "type": "boolean",
+      "default": false
+    },
+    "isPopular": {
+      "type": "boolean",
+      "default": false
+    },
+    "isNew": {
+      "type": "boolean",
+      "default": false
+    },
+    "pricingInfo": {
+      "type": "json"
+    },
+    "prices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.course-price"
+    },
+    "enrolledLearners": {
+      "type": "integer"
+    },
+    "durationInHrs": {
+      "type": "integer"
+    },
+    "deliveryType": {
+      "type": "customField",
+      "options": [
+        "Classroom",
+        "Self Paced",
+        "Live Online Classroom"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tag": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "enableLandingPage": {
+      "type": "boolean",
+      "default": false
+    },
+    "enableStickyFooter": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "section.about-certification",
+        "section.certification-details",
+        "section.ct-1-banner",
+        "section.ct-3-banner",
+        "section.course-certification",
+        "section.course-fee",
+        "section.curriculum",
+        "section.certified-professionals",
+        "section.career-success-stories",
+        "section.demand-increased",
+        "section.exclusive-bonuses",
+        "component.exit-popup",
+        "section.faq-details",
+        "section.faq-details-on-course",
+        "component.got-a-question",
+        "component.flexi-pass-card",
+        "section.highlights",
+        "section.primary-highlights",
+        "component.highlight-summary",
+        "section.horizontal-menu",
+        "section.left-side-bar-menus",
+        "section.learning-path",
+        "section.meet-the-team",
+        "section.meet-the-team-more-details",
+        "section.meet-the-team-success",
+        "section.prerequisites-for-training",
+        "section.project-management-team",
+        "section.quick-facts",
+        "section.review-details",
+        "section.related-courses",
+        "section.social-network-ratings",
+        "section.talk-to-an-advisor",
+        "section.training-options",
+        "section.trending-courses-in-other-cities",
+        "component.title-with-description",
+        "section.trending-courses",
+        "section.why-profela",
+        "section.who-should-attend-course",
+        "landing-page-section.course-features",
+        "section.ct-4-banner"
+      ]
+    },
+    "scheduleListVerion": {
+      "type": "enumeration",
+      "enum": [
+        "V1",
+        "V2",
+        "V3"
+      ],
+      "default": "V1"
+    },
+    "isJobAssistant": {
+      "type": "boolean",
+      "default": false
+    },
+ 
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "timezone": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::timezone.timezone"
+    }
+  }
+}

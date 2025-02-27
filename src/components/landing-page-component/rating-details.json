@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_landing_page_component_rating_details",
+  "info": {
+    "displayName": "ratingDetails"
+  },
+  "options": {},
+  "attributes": {
+    "icons": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "noOfReviews": {
+      "type": "integer"
+    }
+  }
+}

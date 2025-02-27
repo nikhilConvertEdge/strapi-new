@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_section_industry_leaders",
+  "info": {
+    "displayName": "Industry Leaders"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details",
+      "required": true
+    },
+    "teams": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.management-teams",
+      "required": true
+    }
+  }
+}

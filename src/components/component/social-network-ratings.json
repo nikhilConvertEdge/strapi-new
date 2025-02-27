@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_component_social_network_ratings",
+  "info": {
+    "displayName": "Social Network Ratings"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "noOfReviews": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blog_component_features",
+  "info": {
+    "displayName": "Feature",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string"
+    }
+  }
+}

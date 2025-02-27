@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_section_left_side_bar_menus",
+  "info": {
+    "displayName": "Left Side Bar Menus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.left-side-bar-menus",
+      "required": true
+    },
+    "contactButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "trainingDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

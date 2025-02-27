@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blog_section_blog_definitions",
+  "info": {
+    "displayName": "Blog Definition",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "redirectedUrl": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "BlogDefinition": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

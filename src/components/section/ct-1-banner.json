@@ -1,0 +1,110 @@
+{
+  "collectionName": "components_section_ct_1_banners",
+  "info": {
+    "displayName": "CT1 Banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "subHeading": {
+      "type": "string",
+      "required": true
+    },
+    "contactButton": {
+      "displayName": "Button Details",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details",
+      "required": true
+    },
+    "trainingDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details",
+      "required": true
+    },
+    "quoteTagLine": {
+      "type": "string",
+      "required": true
+    },
+    "getQuote": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details",
+      "required": true
+    },
+    "ratingDetails": {
+      "displayName": "ratingDetails",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.rating-details",
+      "required": true
+    },
+    "enrolledLearners": {
+      "type": "string",
+      "required": true
+    },
+    "enrolledLearnerProfilePics": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageTagLines": {
+      "displayName": "Image Tag Lines",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.image-tag-lines",
+      "required": true
+    },
+    "highlightedTagLine": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-tag-lines",
+      "required": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.features",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "heading2": {
+      "type": "string"
+    },
+    "curriculumFile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

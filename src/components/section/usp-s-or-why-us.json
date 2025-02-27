@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_section_usp_s_or_why_us_s",
+  "info": {
+    "displayName": "USP’s or Why Us?",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.quick-fact-details",
+      "required": true
+    }
+  }
+}

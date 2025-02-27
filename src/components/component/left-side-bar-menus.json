@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_component_left_side_bar_menus_s",
+  "info": {
+    "displayName": "Menus ",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "link",
+        "button"
+      ]
+    },
+    "redirectUrl": {
+      "type": "string"
+    }
+  }
+}

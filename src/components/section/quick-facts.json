@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_section_quick_facts",
+  "info": {
+    "displayName": "Quick Facts",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "facts": {
+      "displayName": "Facts",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.facts",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

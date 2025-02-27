@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_blog_section_video_content_blocks",
+  "info": {
+    "displayName": "Video Content Block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "redirectedUrl": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "heading": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "youtube"
+      ]
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_section_learners_overthen_globes",
+  "info": {
+    "displayName": "learnersOverthenGlobe"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "specification": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.image-header-description",
+      "required": true
+    },
+    "enrolledLearners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "section.continental-based-enrolled-learners",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_landing_page_component_highlights",
+  "info": {
+    "displayName": "Highlights"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "text"
+    },
+    "highlight": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

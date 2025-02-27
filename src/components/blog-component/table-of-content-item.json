@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blog_component_table_of_content_items",
+  "info": {
+    "displayName": "Table Of Content Item"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "redirectedUrl": {
+      "type": "string"
+    }
+  }
+}

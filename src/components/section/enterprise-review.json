@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_section_enterprise_reviews",
+  "info": {
+    "displayName": "Enterprise Review"
+  },
+  "options": {},
+  "attributes": {
+    "review": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    },
+    "enterprise": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.enterprise-details",
+      "required": true
+    }
+  }
+}

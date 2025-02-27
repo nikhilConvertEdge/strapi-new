@@ -1,0 +1,89 @@
+{
+  "collectionName": "components_section_ct_2_banners",
+  "info": {
+    "displayName": "CT2 Banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading1": {
+      "type": "string",
+      "required": true
+    },
+    "heading2": {
+      "type": "string",
+      "required": true
+    },
+    "heading3": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    },
+    "individualButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details",
+      "required": true
+    },
+    "enterpriseButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details",
+      "required": true
+    },
+    "teams": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.banner-team",
+      "required": true
+    },
+    "icon1": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "icon2": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "icon3": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "icon4": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "TrustedCompany": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.trusted-by-companies",
+      "required": true
+    },
+    "enrolledLearners": {
+      "type": "string",
+      "required": true
+    },
+    "enrolledLearnerProfilePics": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

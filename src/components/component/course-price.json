@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_component_course_prices",
+  "info": {
+    "displayName": "Course Price",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "currency": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::currency.currency"
+    },
+    "price": {
+      "type": "string"
+    },
+    "isDefault": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "comparePrice": {
+      "type": "string"
+    }
+  }
+}

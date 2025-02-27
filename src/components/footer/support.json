@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_footer_supports",
+  "info": {
+    "displayName": "Support"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.links",
+      "required": true
+    }
+  }
+}

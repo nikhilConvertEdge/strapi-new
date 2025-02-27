@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_component_team_profiles",
+  "info": {
+    "displayName": "Team Profile",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "about": {
+      "type": "text"
+    },
+    "linkedinUrl": {
+      "type": "string"
+    },
+    "companyLogos": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

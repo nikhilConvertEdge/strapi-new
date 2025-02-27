@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_section_why_teach_at_profelas",
+  "info": {
+    "displayName": "Why Teach At Profela"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.advantages"
+    },
+    "joinUsButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.button-details"
+    }
+  }
+}

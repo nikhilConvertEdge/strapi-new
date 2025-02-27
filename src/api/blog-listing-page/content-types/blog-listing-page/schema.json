@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_listing_pages",
+  "info": {
+    "singularName": "blog-listing-page",
+    "pluralName": "blog-listing-pages",
+    "displayName": "Blog Listing Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-section.content-banner"
+    },
+    "learningResourses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-section.learning-resourse"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "blog-section.signup-newsletter"
+      ]
+    }
+  }
+}

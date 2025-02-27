@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_landing_page_component_ct1_components_name",
+  "info": {
+    "displayName": "CT1 Components Name"
+  },
+  "options": {},
+  "attributes": {
+    "courseTemplateComponent": {
+      "type": "enumeration",
+      "enum": [
+        "ComponentSectionCt1Banner",
+        "ComponentComponentFlexiPassCard",
+        "ComponentSectionLeftSideBarMenus",
+        "ComponentComponentHighlightSummary",
+        "ComponentSectionHighlights",
+        "ComponentSectionWhyProfela",
+        "ComponentSectionCourseFee",
+        "ComponentSectionMeetTheTeam",
+        "ComponentComponentGotAQuestion",
+        "ComponentSectionReviewDetails",
+        "ComponentSectionSocialNetworkRatings",
+        "ComponentSectionCurriculum",
+        "ComponentSectionFaqDetails",
+        "ComponentComponentGotAQuestion",
+        "ComponentSectionCourseCertification",
+        "ComponentSectionPrerequisitesForTraining",
+        "ComponentSectionWhoShouldAttendCourse",
+        "ComponentSectionCertifiedProfessionals",
+        "ComponentSectionCertificationDetails",
+        "ComponentComponentGotAQuestion",
+        "ComponentSectionLearningPath",
+        "ComponentSectionProjectManagementTeam",
+        "ComponentSectionRelatedCourses",
+        "ComponentSectionTrendingCourses",
+        "ComponentSectionTrendingCoursesInOtherCities"
+      ]
+    }
+  }
+}

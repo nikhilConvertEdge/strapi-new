@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_section_meet_the_team_more_details",
+  "info": {
+    "displayName": "Meet The Team More Details"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string"
+    },
+    "instructors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.meet-the-team-roles"
+    },
+    "achievements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-component.feature-with-icon"
+    },
+    "scheduleACallButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.button-details"
+    },
+    "passPercenatge": {
+      "type": "biginteger"
+    },
+    "passPercenatgeTitle": {
+      "type": "text"
+    },
+    "progressTagLine": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_component_image_with_titles",
+  "info": {
+    "displayName": "Image with title"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

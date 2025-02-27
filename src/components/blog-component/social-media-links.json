@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blog_component_social_media_links",
+  "info": {
+    "displayName": "Social Media Links"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.social-links"
+    }
+  }
+}

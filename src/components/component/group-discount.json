@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_component_group_discounts",
+  "info": {
+    "displayName": "Group Discount"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "integer"
+    }
+  }
+}

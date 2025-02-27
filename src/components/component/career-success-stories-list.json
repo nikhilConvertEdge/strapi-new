@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_component_career_success_stories_lists",
+  "info": {
+    "displayName": "Career Success Stories List"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "about": {
+      "type": "text"
+    },
+    "linkedinUrl": {
+      "type": "string"
+    },
+    "beforeCompany": {
+      "displayName": "Career Success Story Company",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.career-success-story-company"
+    },
+    "afterCompany": {
+      "displayName": "Career Success Story Company",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.career-success-story-company"
+    }
+  }
+}

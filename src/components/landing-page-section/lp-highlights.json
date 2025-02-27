@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_landing_page_section_lp_highlights",
+  "info": {
+    "displayName": "LP Highlights",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "replaceComponentTo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.course-template-1-components-dropdown"
+    },
+    "highlightList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing-page-component.highlights"
+    }
+  }
+}

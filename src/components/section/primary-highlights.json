@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_section_primary_highlights",
+  "info": {
+    "displayName": "Primary Highlights"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "preHeading": {
+      "type": "text"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "highlightList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.highlights-2"
+    }
+  }
+}

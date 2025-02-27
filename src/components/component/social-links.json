@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_component_social_links",
+  "info": {
+    "displayName": "Social Links"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "instagram",
+        "twitter",
+        "linkedin",
+        "snapchat",
+        "tiktok",
+        "pinterest",
+        "reddit",
+        "youtube",
+        "whatsapp",
+        "telegram",
+        "tumblr",
+        "discord",
+        "wechat",
+        "flickr"
+      ]
+    }
+  }
+}

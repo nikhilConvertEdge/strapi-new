@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_section_curricula",
+  "info": {
+    "displayName": "Curriculum",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "topics": {
+      "displayName": "Curriculum Topics",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.curriculum-topics",
+      "required": true
+    },
+    "downloadButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details",
+      "required": true
+    },
+    "curriculumFile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

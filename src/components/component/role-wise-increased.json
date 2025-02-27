@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_component_role_wise_increaseds",
+  "info": {
+    "displayName": "Role Wise Increased",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "points": {
+      "displayName": "Points",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.points"
+    }
+  }
+}

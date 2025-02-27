@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_component_certified_professional_roles",
+  "info": {
+    "displayName": "Certified Professional Role"
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    },
+    "list": {
+      "displayName": "Certified Professional Role List",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.certified-professional-role-list"
+    }
+  }
+}

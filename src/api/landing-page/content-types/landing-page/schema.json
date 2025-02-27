@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landing_pages",
+  "info": {
+    "singularName": "landing-page",
+    "pluralName": "landing-pages",
+    "displayName": "Landing Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "landing-page-section.landing-page-banner",
+        "landing-page-section.quick-facts",
+        "landing-page-section.lp-horizontal-menu",
+        "landing-page-section.talk-to-an-advisor",
+        "landing-page-section.course-features",
+        "landing-page-section.lp-highlights",
+        "landing-page-section.lp-meet-the-team-details",
+        "section.exclusive-bonuses",
+        "section.ct-4-banner"
+      ]
+    },
+    "course_template_1": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course-template-1.course-template-1"
+    },
+    "removeCourseComponents": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.remove-course-components"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

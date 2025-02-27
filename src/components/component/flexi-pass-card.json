@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_component_flexi_pass_cards",
+  "info": {
+    "displayName": "Flexi Pass Card"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

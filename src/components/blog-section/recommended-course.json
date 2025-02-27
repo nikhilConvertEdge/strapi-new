@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blog_section_recommended_course",
+  "info": {
+    "displayName": "Recommended Course",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-template-1.course-template-1"
+    }
+  }
+}

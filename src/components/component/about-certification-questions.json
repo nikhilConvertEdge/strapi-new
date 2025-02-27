@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_component_about_certification_questions",
+  "info": {
+    "displayName": "About Certification Questions"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "explanation": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

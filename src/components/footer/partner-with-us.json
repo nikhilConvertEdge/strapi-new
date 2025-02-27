@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_footer_partner_with_uses",
+  "info": {
+    "displayName": "Partner With Us"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.links",
+      "required": true
+    }
+  }
+}

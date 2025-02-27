@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_section_related_courses",
+  "info": {
+    "displayName": "Related Courses"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "courses": {
+      "displayName": "List",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.list",
+      "required": true
+    }
+  }
+}

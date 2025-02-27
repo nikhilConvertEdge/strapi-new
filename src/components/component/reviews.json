@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_component_reviews",
+  "info": {
+    "displayName": "Reviews",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "reviewTagLine": {
+      "type": "string"
+    },
+    "review": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "user": {
+      "displayName": "Review User",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.review-user"
+    },
+    "reviewType": {
+      "type": "enumeration",
+      "enum": [
+        "google",
+        "trustpilot",
+        "others"
+      ]
+    }
+  }
+}

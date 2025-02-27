@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_component_review_users",
+  "info": {
+    "displayName": "Review User"
+  },
+  "options": {},
+  "attributes": {
+    "profile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "reviewTypeUrl": {
+      "type": "string"
+    }
+  }
+}

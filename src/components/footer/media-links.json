@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_footer_media_links",
+  "info": {
+    "displayName": "Media Links"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "links": {
+      "displayName": "Social Links",
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.social-links",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_blog_section_signup_newsletters",
+  "info": {
+    "displayName": "Signup Newsletter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading1": {
+      "type": "string"
+    },
+    "preTag": {
+      "type": "string"
+    },
+    "heading2": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "iTag": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.social-links"
+    }
+  }
+}

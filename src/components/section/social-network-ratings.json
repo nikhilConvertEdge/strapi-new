@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_social_network_ratings",
+  "info": {
+    "displayName": "Social Network Ratings"
+  },
+  "options": {},
+  "attributes": {
+    "ratings": {
+      "displayName": "Social Network Ratings",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.social-network-ratings",
+      "required": true
+    }
+  }
+}

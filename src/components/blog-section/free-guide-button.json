@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blog_section_free_guide_buttons",
+  "info": {
+    "displayName": "Button",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "buttonDetail": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.button-details"
+    }
+  }
+}

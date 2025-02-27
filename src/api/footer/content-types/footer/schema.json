@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "supportContact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.support-contact"
+    },
+    "company": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.company-links"
+    },
+    "policies": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.policies"
+    },
+    "resources": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.resources"
+    },
+    "partnerWithUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.partner-with-us"
+    },
+    "support": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.support"
+    },
+    "mediaLinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.media-links"
+    },
+    "topCategories": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.categories"
+    },
+    "topCourses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.courses"
+    },
+    "mastersPrograms": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.courses"
+    },
+    "CopyRightInfo": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_section_demand_increaseds",
+  "info": {
+    "displayName": "Demand Increased"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "roles": {
+      "displayName": "Role Wise Increased",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.role-wise-increased",
+      "required": true
+    },
+    "description":{
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": false
+    }
+  }
+}

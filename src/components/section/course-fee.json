@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_section_course_fee",
+  "info": {
+    "displayName": "Course Fee",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "required": true
+    },
+    "tag": {
+      "type": "string",
+      "required": true
+    },
+    "tagInfo": {
+      "type": "customField",
+      "options": {
+       
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "plans": {
+      "displayName": "Course Fee Plans",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.course-fee-plans",
+      "required": true,
+      "max": 2
+    },
+    "isMoneyBackGuaranteeLogoEnabled": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

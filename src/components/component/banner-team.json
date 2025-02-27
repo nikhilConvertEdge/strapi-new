@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_component_banner_teams",
+  "info": {
+    "displayName": "Banner Team"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "companyLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "designation": {
+      "type": "string"
+    },
+    "promotedTo": {
+      "type": "string"
+    }
+  }
+}

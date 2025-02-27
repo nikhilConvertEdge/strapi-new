@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_component_faq_detail_roles",
+  "info": {
+    "displayName": "FAQ Detail Role"
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    },
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.faqs"
+    }
+  }
+}

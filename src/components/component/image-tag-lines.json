@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_component_image_tag_lines",
+  "info": {
+    "displayName": "Image Tag Lines",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "tagLine": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_component_header_sub_items",
+  "info": {
+    "displayName": "Header subItem"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

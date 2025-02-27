@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_component_lp_menu_bar_details",
+  "info": {
+    "displayName": "Menu Bar details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "link",
+        "button"
+      ]
+    },
+    "redirectUrl": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

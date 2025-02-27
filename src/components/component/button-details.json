@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_component_button_details",
+  "info": {
+    "displayName": "Button Details"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "button",
+        "href"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "redirectUrl": {
+      "type": "string"
+    }
+  }
+}

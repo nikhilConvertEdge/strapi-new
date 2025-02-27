@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_section_meet_the_teams",
+  "info": {
+    "displayName": "Meet The Team Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "roles": {
+      "displayName": "Meet The Team Role List",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.meet-the-team-role-list",
+      "required": true
+    }
+  }
+}

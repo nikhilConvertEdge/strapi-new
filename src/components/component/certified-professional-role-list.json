@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_component_certified_professional_role_lists",
+  "info": {
+    "displayName": "Certified Professional Role List"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": ["salaries", "companies", "jobs"]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": true
+    },
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

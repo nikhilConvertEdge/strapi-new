@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_section_meet_the_team_successes",
+  "info": {
+    "displayName": "Meet the team success",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "profile": {
+      "displayName": "Team Profile",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.team-profile",
+      "required": true
+    }
+  }
+}
