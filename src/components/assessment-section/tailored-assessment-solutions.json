@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_assessment_section_assessment",
+  "info": {
+    "displayName": "Tailored Assessment Solutions"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "categoryWiseSolutions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "assessment-components.assessment-categories"
+    }
+  }
+}

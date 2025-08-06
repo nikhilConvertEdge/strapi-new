@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solution_pages",
+  "info": {
+    "singularName": "solution-page",
+    "pluralName": "solution-pages",
+    "displayName": "Solution Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "section.business-impact",
+        "section.what-sets-techademy",
+        "section.skill-mastery",
+        "section.our-process",
+        "section.case-studies",
+        "section.our-clients",
+        "section.learning-hub",
+        "section.challenge-your-workforce",
+        "section.ct-17-banner"
+      ]
+    }
+  }
+}

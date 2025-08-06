@@ -1,0 +1,66 @@
+{
+  "collectionName": "components_component_recommended_course_details",
+  "info": {
+    "displayName": "Recommended Course Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "isBestSeller": {
+      "type": "boolean",
+      "default": false
+    },
+    "isTrending": {
+      "type": "boolean",
+      "default": false
+    },
+    "isRecommended": {
+      "type": "boolean",
+      "default": false
+    },
+    "isPopular": {
+      "type": "boolean",
+      "default": false
+    },
+    "isNew": {
+      "type": "boolean",
+      "default": false
+    },
+    "deliveryType": {
+      "type": "customField",
+      "options": ["Classroom", "Self Paced", "Live Online Classroom"],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "enrolledLearners": {
+      "type": "integer"
+    },
+    "durationInHrs": {
+      "type": "integer"
+    },
+    "prices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.course-price"
+    },
+    "pricingInfo": {
+      "type": "json"
+    },
+    "globalAccreditation": {
+      "type": "string"
+    },
+    "exploreButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

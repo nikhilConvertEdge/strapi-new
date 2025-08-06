@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_component_upskilled_details",
+  "info": {
+    "displayName": "Upskilled Details"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-with-title"
+    },
+    "feature": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-with-title"
+    },
+    "feature2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.upskilled-card"
+    },
+    "icon": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "bannerImage": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

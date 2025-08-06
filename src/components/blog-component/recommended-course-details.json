@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_blog_component_recommended_course_details",
+  "info": {
+    "displayName": "Recommended Course Details"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "isBestSeller": {
+      "type": "boolean"
+    },
+    "isTrending": {
+      "type": "boolean"
+    },
+    "isRecommended": {
+      "type": "boolean"
+    },
+    "isPopular": {
+      "type": "boolean"
+    },
+    "isNew": {
+      "type": "boolean"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "enrolledLearners": {
+      "type": "biginteger"
+    },
+    "durationInHrs": {
+      "type": "biginteger"
+    },
+    "deliveryType": {
+      "type": "customField",
+      "options": ["Classroom", "Self Paced", "Labs", "Live Online Classroom"],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "exploreButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "viewAllAgileCourses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

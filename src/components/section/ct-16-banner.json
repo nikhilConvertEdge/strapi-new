@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_section_ct_16_banners",
+  "info": {
+    "displayName": "CT16 Banner"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    }
+  }
+}

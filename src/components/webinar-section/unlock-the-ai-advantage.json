@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_webinar_section_unlock_the_ai_advantages",
+  "info": {
+    "displayName": "Unlock the AI Advantage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "description": {
+      "type": "text"
+    },
+    "advantages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.icon-with-title"
+    },
+    "becomeProjectManagerButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "speakerShowcase": {
+      "type": "component",
+      "repeatable": false,
+      "component": "webinar-component.trusted-voices"
+    }
+  }
+}

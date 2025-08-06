@@ -14,8 +14,7 @@
     "description": {
       "type": "customField",
       "options": {
-       
-        "preset": "standard"
+        "preset": "defaultHtml"
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
@@ -69,6 +68,19 @@
       "allowedTypes": ["images", "files", "videos", "audios"],
       "type": "media",
       "multiple": true
+    },
+    "registerForDemo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.button-details"
+    },
+    "registerForWebinar": {
+      "type": "text"
+    },
+    "registerForWebinarButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.button-details"
     }
   }
 }

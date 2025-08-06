@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_event_component_overviews",
+  "info": {
+    "displayName": "Overview"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-component.feature-with-icon"
+    }
+  }
+}

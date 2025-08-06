@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_section_end_to_end_solutions",
+  "info": {
+    "displayName": "End To End Solutions"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "stepWiseSolutions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.talent-journey-steps"
+    }
+  }
+}

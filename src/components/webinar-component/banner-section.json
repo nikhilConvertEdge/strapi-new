@@ -1,0 +1,77 @@
+{
+  "collectionName": "components_webinar_component_banner_sections",
+  "info": {
+    "displayName": "Banner Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "webImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bannerLabel": {
+      "type": "string"
+    },
+    "bannerSubLabel": {
+      "type": "string"
+    },
+    "benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.check-list"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.check-list"
+    },
+    "registerButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.register"
+    },
+    "isFree": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.check-list"
+    },
+    "registerFreeButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.register"
+    },
+    "redirectUrl": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.redirection-url"
+    },
+    "label_icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

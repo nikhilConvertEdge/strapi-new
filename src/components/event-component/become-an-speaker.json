@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_event_component_become_a_speakers",
+  "info": {
+    "displayName": "Become A Speaker",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "showcaseYourExpertiseButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "userDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "event-component.profile-card"
+    }
+  }
+}

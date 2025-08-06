@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_event_component_participant_details",
+  "info": {
+    "displayName": "Participant Details"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": true
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "rating": {
+      "type": "decimal"
+    }
+  }
+}

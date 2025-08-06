@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_section_ct_18_banners",
+  "info": {
+    "displayName": "CT18 Banner"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bannerImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "getStartedButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

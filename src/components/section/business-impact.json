@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_section_business_impacts",
+  "info": {
+    "displayName": "Business Impact"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "impactMetrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.title-with-description-2"
+    }
+  }
+}

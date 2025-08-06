@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_component_left_side_bar_menu_2s",
+  "info": {
+    "displayName": "Left Side Bar Menu 2",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.left-side-bar-menus",
+      "required": true
+    },
+    "getStartedButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "contactAdvisorButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

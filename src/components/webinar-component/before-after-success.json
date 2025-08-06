@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_webinar_component_before_after_successes",
+  "info": {
+    "displayName": "Before After Success"
+  },
+  "options": {},
+  "attributes": {
+    "before": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-with-title"
+    },
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "after": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-with-title"
+    }
+  }
+}

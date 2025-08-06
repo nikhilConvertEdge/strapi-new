@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_webinar_component_webinar_details",
+  "info": {
+    "displayName": "Webinar Details"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "heading": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "to": {
+      "type": "time"
+    },
+    "from": {
+      "type": "time"
+    },
+    "registeredCount": {
+      "type": "biginteger"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

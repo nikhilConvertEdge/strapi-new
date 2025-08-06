@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_webinar_component_profiles",
+  "info": {
+    "displayName": "Profile"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "dateOfJoining": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    }
+  }
+}

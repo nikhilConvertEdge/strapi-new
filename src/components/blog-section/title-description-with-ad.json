@@ -17,7 +17,6 @@
     "description1": {
       "type": "customField",
       "options": {
-       
         "preset": "defaultHtml"
       },
       "customField": "plugin::ckeditor5.CKEditor"
@@ -30,7 +29,6 @@
     "description2": {
       "type": "customField",
       "options": {
-       
         "preset": "defaultHtml"
       },
       "customField": "plugin::ckeditor5.CKEditor"

@@ -4,14 +4,13 @@
     "displayName": "Background Highlight Block"
   },
   "options": {},
-  "attributes": { 
+  "attributes": {
     "name": {
       "type": "string"
     },
     "description": {
       "type": "customField",
       "options": {
-       
         "preset": "defaultHtml"
       },
       "customField": "plugin::ckeditor5.CKEditor"

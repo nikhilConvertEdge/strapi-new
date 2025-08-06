@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "assessment_homepages",
+  "info": {
+    "singularName": "assessment-homepage",
+    "pluralName": "assessment-homepages",
+    "displayName": "Assessment Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "section.ct-17-banner",
+        "section.our-clients",
+        "assessment-section.proven-performance",
+        "assessment-section.tailored-assessment-solutions",
+        "assessment-section.tailored-plans",
+        "assessment-components.service-request-cta",
+        "section.review-details",
+        "section.social-network-ratings",
+        "component.cta-content-block"
+      ]
+    }
+  }
+}

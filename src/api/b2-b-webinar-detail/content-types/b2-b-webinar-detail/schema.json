@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "b2_b_webinar_details",
+  "info": {
+    "singularName": "b2-b-webinar-detail",
+    "pluralName": "b2-b-webinar-details",
+    "displayName": "B2B  Webinar Detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "section.ct-15-banner",
+        "webinar-section.about-webinar",
+        "webinar-section.what-you-will-gain",
+        "webinar-section.meet-the-trainer",
+        "webinar-section.who-can-attend",
+        "section.review-details",
+        "webinar-section.career-transition",
+        "webinar-section.about-us",
+        "webinar-section.recommended-webinars",
+        "webinar-section.faq-details-on-webinar"
+      ]
+    },
+    "b_2_b_resource_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::b2-b-resource-type.b2-b-resource-type"
+    }
+  }
+}

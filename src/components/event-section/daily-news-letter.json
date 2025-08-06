@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_event_section_daily_news_letters",
+  "info": {
+    "displayName": "Daily NewsLetter"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "heading2": {
+      "type": "string"
+    },
+    "privacyConsent": {
+      "type": "text"
+    },
+    "appDownloadTitle": {
+      "type": "text"
+    },
+    "appDownloadDescription": {
+      "type": "string"
+    }
+  }
+}

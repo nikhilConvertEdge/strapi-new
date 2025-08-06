@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_webinar_section_career_benifits",
+  "info": {
+    "displayName": "Career Benifits"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "benefitsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "webinar-component.info-details"
+    },
+    "becomeProjectManagerButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

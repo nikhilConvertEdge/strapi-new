@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_component_course_track_details",
+  "info": {
+    "displayName": "Course Track Details"
+  },
+  "options": {},
+  "attributes": {
+    "trackTitle": {
+      "type": "string"
+    },
+    "trackName": {
+      "type": "string"
+    },
+    "trackList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.title-with-description"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-with-description"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_event_component_advertise_with_uses",
+  "info": {
+    "displayName": "Advertise With Us"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "getInTouchButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

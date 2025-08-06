@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_component_title_with_description_2s",
+  "info": {
+    "displayName": "Title With Description 2"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

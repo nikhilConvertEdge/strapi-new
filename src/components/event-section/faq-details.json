@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_event_section_faq_details",
+  "info": {
+    "displayName": "FAQ Details"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "roleWiseFaqs": {
+      "displayName": "FAQ Detail Role",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.faq-detail-role"
+    }
+  }
+}

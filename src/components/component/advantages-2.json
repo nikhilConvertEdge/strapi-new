@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_component_advantages_2s",
+  "info": {
+    "displayName": "Advantages 2"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "colorCode": {
+      "type": "string"
+    }
+  }
+}

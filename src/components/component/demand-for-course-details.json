@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_component_demand_for_course_details",
+  "info": {
+    "displayName": "Demand For Course Details"
+  },
+  "options": {},
+  "attributes": {
+    "courseName": {
+      "type": "text"
+    },
+    "courseDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.demand-for-course-list"
+    }
+  }
+}

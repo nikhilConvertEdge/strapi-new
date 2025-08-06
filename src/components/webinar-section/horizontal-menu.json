@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_webinar_section_horizontal_menus",
+  "info": {
+    "displayName": "Horizontal Menu"
+  },
+  "options": {},
+  "attributes": {
+    "menus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.left-side-bar-menus"
+    }
+  }
+}

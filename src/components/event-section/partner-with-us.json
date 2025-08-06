@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_event_section_partner_with_uses",
+  "info": {
+    "displayName": "Partner with Us"
+  },
+  "options": {},
+  "attributes": {
+    "waysToCollaborate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.advantages"
+    },
+    "getInTouchButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

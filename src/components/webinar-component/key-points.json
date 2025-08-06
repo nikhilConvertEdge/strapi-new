@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_webinar_component_key_points",
+  "info": {
+    "displayName": "Key Points"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "blocks"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

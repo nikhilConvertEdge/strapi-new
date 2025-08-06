@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_event_section_join_the_comunities",
+  "info": {
+    "displayName": "Join The Comunity"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "privacyConsent": {
+      "type": "string"
+    },
+    "subscribeForFree": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

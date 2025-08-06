@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_webinar_section_live_training_promos",
+  "info": {
+    "displayName": "Live Training Promo"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "heading": {
+      "type": "text"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "promoText": {
+      "type": "string"
+    },
+    "promoCountDown": {
+      "type": "datetime"
+    },
+    "reserveYourSpotButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

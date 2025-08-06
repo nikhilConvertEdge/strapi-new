@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_event_section_conference_tracks",
+  "info": {
+    "displayName": "Conference Tracks"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "trackDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "event-component.card-carousel"
+    },
+    "applyToSpeakButton": {
+      "displayName": "Button Details",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

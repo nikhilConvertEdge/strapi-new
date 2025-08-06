@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_event_section_promote_and_connects",
+  "info": {
+    "displayName": "Promote And Connect"
+  },
+  "options": {},
+  "attributes": {
+    "connectWithUs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "event-component.connect-options"
+    },
+    "advertiseWithUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "event-component.advertise-with-us"
+    }
+  }
+}

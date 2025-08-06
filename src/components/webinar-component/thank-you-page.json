@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_webinar_component_thank_you_page_s",
+  "info": {
+    "displayName": "Thank You Page ",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.icon-with-title"
+    },
+    "heading2": {
+      "type": "string"
+    },
+    "heading3": {
+      "type": "string"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "videoThumbnail": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "date": {
+      "type": "string"
+    },
+    "confirmationDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.icon-with-title"
+    },
+    "getLatestUpdates": {
+      "type": "text"
+    },
+    "socialMediaButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-with-icon"
+    },
+    "time": {
+      "type": "blocks"
+    }
+  }
+}

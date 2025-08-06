@@ -9,7 +9,6 @@
     "code": {
       "type": "customField",
       "options": {
-       
         "preset": "defaultHtml"
       },
       "customField": "plugin::ckeditor5.CKEditor"

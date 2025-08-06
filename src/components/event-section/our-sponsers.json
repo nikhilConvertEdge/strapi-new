@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_event_section_our_sponsers",
+  "info": {
+    "displayName": "Our Sponsers"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "preHeading": {
+      "type": "text"
+    },
+    "requestToPartnerButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "sponsorLogos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-component.image"
+    }
+  }
+}

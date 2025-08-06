@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "b2_c_homepages",
+  "info": {
+    "singularName": "b2-c-homepage",
+    "pluralName": "b2-c-homepages",
+    "displayName": "B2C Homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "section.ct-7-banner",
+        "component.trusted-by-companies",
+        "section.learning-experience",
+        "section.learner-testimonials",
+        "section.industry-leaders",
+        "section.enterprises-are-saying",
+        "section.why-techademy",
+        "section.our-support-system",
+        "component.got-a-question",
+        "section.ct-10-banner"
+      ]
+    }
+  }
+}

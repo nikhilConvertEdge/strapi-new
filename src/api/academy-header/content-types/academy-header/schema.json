@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "academy_headers",
+  "info": {
+    "singularName": "academy-header",
+    "pluralName": "academy-headers",
+    "displayName": "Academy Header"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "menus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.header-item"
+    },
+    "saleBanner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.sale-banner"
+    }
+  }
+}

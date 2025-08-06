@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_component_redirection_urls",
+  "info": {
+    "displayName": "Redirection URL",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "redirectText": {
+      "type": "string"
+    },
+    "redirectionLinkText": {
+      "type": "string"
+    },
+    "redirectIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "redirectionUrl": {
+      "type": "string"
+    }
+  }
+}

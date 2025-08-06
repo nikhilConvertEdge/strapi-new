@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_component_stats",
+  "info": {
+    "displayName": "Stats"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "statsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.learning-path-steps"
+    }
+  }
+}

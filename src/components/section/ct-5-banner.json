@@ -25,12 +25,7 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "features": {
       "type": "component",
@@ -38,6 +33,14 @@
       "component": "component.facts"
     },
     "becameAnInstructorButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.button-details"
+    },
+    "registerForWebinar": {
+      "type": "text"
+    },
+    "registerForWebinarButton": {
       "type": "component",
       "repeatable": false,
       "component": "blog-component.button-details"

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_webinar_section_about_uses",
+  "info": {
+    "displayName": "About Us"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "blocks"
+    }
+  }
+}

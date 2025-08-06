@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_component_rating_details_2s",
+  "info": {
+    "displayName": "RatingDetails 2",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ratings": {
+      "type": "decimal"
+    },
+    "noOfReviews": {
+      "type": "integer"
+    },
+    "reviewType": {
+      "type": "enumeration",
+      "enum": [
+        "google",
+        "trustPilot",
+        "other"
+      ]
+    }
+  }
+}

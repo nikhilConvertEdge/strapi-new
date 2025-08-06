@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_section_case_studies",
+  "info": {
+    "displayName": "Case Studies"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "engagementGrowthShowcase": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.cta-content-block"
+    }
+  }
+}

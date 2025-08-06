@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_component_upskilled_cards",
+  "info": {
+    "displayName": "Upskilled Card"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-with-title"
+    },
+    "details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-with-title"
+    }
+  }
+}

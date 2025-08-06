@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_webinar_section_sticky_footers",
+  "info": {
+    "displayName": "Sticky Footer"
+  },
+  "options": {},
+  "attributes": {
+    "priceLabel": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "countDownText": {
+      "type": "string"
+    },
+    "secureYourFreeSpotButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "icon": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

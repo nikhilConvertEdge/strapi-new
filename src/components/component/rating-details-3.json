@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_component_rating_details_3s",
+  "info": {
+    "displayName": "Rating Details 3"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "rating": {
+      "type": "float"
+    }
+  }
+}

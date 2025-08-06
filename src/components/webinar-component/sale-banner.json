@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_webinar_component_sale_banners",
+  "info": {
+    "displayName": "Sale Banner"
+  },
+  "options": {},
+  "attributes": {
+    "icon1": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "icon2": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "colorCode": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

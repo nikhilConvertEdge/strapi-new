@@ -6,12 +6,7 @@
   "options": {},
   "attributes": {
     "icon": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
+      "allowedTypes": ["images", "files", "videos", "audios"],
       "type": "media",
       "multiple": false
     },
@@ -21,8 +16,7 @@
     "highlight": {
       "type": "customField",
       "options": {
-       
-        "preset": "standard"
+        "preset": "defaultHtml"
       },
       "customField": "plugin::ckeditor5.CKEditor"
     }

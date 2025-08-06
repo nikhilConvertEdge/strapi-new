@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_section_ct_9_banners",
+  "info": {
+    "displayName": "CT9 Banner"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "heading2": {
+      "type": "string"
+    },
+    "getTicketsButton": {
+      "displayName": "Button Details",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details",
+      "required": false
+    },
+    "viewSchedulesButton": {
+      "displayName": "Button Details",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details",
+      "required": false
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.stats",
+      "required": false
+    }
+  }
+}

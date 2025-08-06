@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_assessment_section_our_features",
+  "info": {
+    "displayName": "Our Features"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "featuresList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.cta-content-block"
+    }
+  }
+}

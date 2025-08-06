@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_webinar_section_faq_details_on_webinars",
+  "info": {
+    "displayName": "FAQ Details On Webinar"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "categoryWiseFaqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.faq-detail-role"
+    }
+  }
+}

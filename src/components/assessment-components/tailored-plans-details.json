@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_assessment_components_tailored_plans_",
+  "info": {
+    "displayName": "Tailored Plans Details"
+  },
+  "options": {},
+  "attributes": {
+    "planOverview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.feature-with-icon"
+    },
+    "planFeatures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.icon-with-title"
+    },
+    "price": {
+      "type": "string"
+    },
+    "isBestSeller": {
+      "type": "boolean"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

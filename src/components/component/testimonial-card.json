@@ -1,0 +1,85 @@
+{
+  "collectionName": "components_component_testimonial_cards",
+  "info": {
+    "displayName": "Testimonial Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "profileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "text"
+    },
+    "compnayLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "companyUrl": {
+      "type": "text"
+    },
+    "about": {
+      "type": "text"
+    },
+    "review": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "float"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "post",
+        "video",
+        "youtube"
+      ]
+    },
+    "videoUrl": {
+      "type": "text"
+    },
+    "noOfReviews": {
+      "type": "biginteger"
+    },
+    "reviewType": {
+      "type": "enumeration",
+      "enum": [
+        "google",
+        "trustPilot",
+        "other"
+      ]
+    },
+    "videoThumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

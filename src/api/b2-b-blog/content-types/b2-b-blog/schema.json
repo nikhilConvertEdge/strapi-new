@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "b2_b_blogs",
+  "info": {
+    "singularName": "b2-b-blog",
+    "pluralName": "b2-b-blogs",
+    "displayName": "B2B Blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "viewCount": {
+      "type": "integer"
+    },
+    "durationInMinutes": {
+      "type": "integer"
+    },
+    "b_2_b_author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::b2-b-author.b2-b-author"
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "relatedArticles": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-section.related-articles"
+    },
+    "recommentedArticle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-section.related-articles"
+    },
+    "recommentedCourse": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-section.recommended-course"
+    },
+    "description": {
+      "type": "text"
+    },
+    "b_2_b_blog_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::b2-b-blog-category.b2-b-blog-category"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "blog-section.table-of-contents",
+        "blog-section.blog-definition",
+        "blog-section.video-content-block",
+        "blog-section.content-banner",
+        "blog-section.highlight-block",
+        "blog-section.signup-newsletter",
+        "blog-component.code-text-editor",
+        "blog-component.image",
+        "blog-section.background-highlight-block",
+        "blog-section.comparison-table",
+        "blog-section.free-guide-button",
+        "blog-section.title-with-description",
+        "section.faq-details",
+        "blog-component.social-media-links",
+        "blog-section.recommended-blogs",
+        "blog-section.recommended-courses"
+      ]
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    }
+  }
+}

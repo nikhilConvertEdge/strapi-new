@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_section_tools_covereds",
+  "info": {
+    "displayName": "Tools Covered"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "companyImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.image-with-title"
+    }
+  }
+}

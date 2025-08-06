@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_section_ct_17_banners",
+  "info": {
+    "displayName": "CT17 Banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "downloadBrochureButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page-component.download-button"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-with-icon"
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

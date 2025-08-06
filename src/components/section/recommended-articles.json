@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_section_recommended_articles",
+  "info": {
+    "displayName": "Recommended Articles",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.e-book-details"
+    }
+  }
+}

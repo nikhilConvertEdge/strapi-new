@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_webinar_component_trusted_voices",
+  "info": {
+    "displayName": "Trusted Voices"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "highlights": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.advantages"
+    }
+  }
+}

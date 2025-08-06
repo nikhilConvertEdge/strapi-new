@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "code": {
+      "type": "uid",
+      "targetField": "heading"
+    },
+    "eventDate": {
+      "type": "datetime"
+    },
+
+    "eventType": {
+      "type": "string"
+    },
+    "location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "prices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.course-price"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "planDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.upgrade-plan-pop-up"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "section.ct-9-banner",
+        "event-section.event-summary",
+        "event-section.conference-tracks",
+        "event-section.why-attend",
+        "event-section.our-sponsers",
+        "event-section.what-participants-say-about-us",
+        "event-section.faq-details"
+      ]
+    }
+  }
+}

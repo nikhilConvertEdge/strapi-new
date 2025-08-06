@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_component_icon_with_ckeditors",
+  "info": {
+    "displayName": "Icon With Ckeditor"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

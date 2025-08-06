@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_webinar_section_career_transitions",
+  "info": {
+    "displayName": "Career Transition"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "learnerDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "webinar-component.career-transition-details"
+    }
+  }
+}

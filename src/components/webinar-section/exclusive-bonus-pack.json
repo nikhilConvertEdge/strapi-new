@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_webinar_section_exclusive_bonus_packs",
+  "info": {
+    "displayName": "Exclusive Bonus Pack"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "blocks"
+    },
+    "icon": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "bonusList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "webinar-component.bonus-card"
+    },
+    "becomeProjectManagerButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

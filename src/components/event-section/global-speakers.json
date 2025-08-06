@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_event_section_global_speakers",
+  "info": {
+    "displayName": "Global Speakers"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "preHeading": {
+      "type": "text"
+    }
+  }
+}

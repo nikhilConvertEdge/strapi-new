@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_component_upgrade_plan_pop_ups",
+  "info": {
+    "displayName": "Upgrade Plan Pop Up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.upgrade-plan"
+    },
+    "subHeading": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_webinar_component_info_details",
+  "info": {
+    "displayName": "Info Details"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

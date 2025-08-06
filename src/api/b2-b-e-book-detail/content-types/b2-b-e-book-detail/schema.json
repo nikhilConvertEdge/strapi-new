@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "b2_b_e_book_details",
+  "info": {
+    "singularName": "b2-b-e-book-detail",
+    "pluralName": "b2-b-e-book-details",
+    "displayName": "B2B EBook Detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "published": {
+      "type": "datetime"
+    },
+    "durationInMin": {
+      "type": "biginteger"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "section.e-book-beginner-guide",
+        "section.about-e-book",
+        "section.recommended-articles",
+        "section.recommended-course"
+      ]
+    },
+    "b_2_b_resource_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::b2-b-resource-type.b2-b-resource-type"
+    },
+    "b_2_b_author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::b2-b-author.b2-b-author"
+    }
+  }
+}

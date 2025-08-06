@@ -369,6 +369,211 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAcademyFooterAcademyFooter extends Struct.SingleTypeSchema {
+  collectionName: 'academy_footers';
+  info: {
+    displayName: 'Academy Footer';
+    pluralName: 'academy-footers';
+    singularName: 'academy-footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    company: Schema.Attribute.Component<'footer.company-links', false>;
+    CopyRightInfo: Schema.Attribute.RichText &
+      Schema.Attribute.Required &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::academy-footer.academy-footer'
+    > &
+      Schema.Attribute.Private;
+    mastersPrograms: Schema.Attribute.Component<'footer.courses', false>;
+    mediaLinks: Schema.Attribute.Component<'footer.media-links', false>;
+    partnerWithUs: Schema.Attribute.Component<'footer.partner-with-us', false>;
+    policies: Schema.Attribute.Component<'footer.policies', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    resources: Schema.Attribute.Component<'footer.resources', false>;
+    support: Schema.Attribute.Component<'footer.support', false>;
+    supportContact: Schema.Attribute.Component<'footer.support-contact', true>;
+    topCategories: Schema.Attribute.Component<'footer.categories', false>;
+    topCourses: Schema.Attribute.Component<'footer.courses', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiAcademyHeaderAcademyHeader extends Struct.SingleTypeSchema {
+  collectionName: 'academy_headers';
+  info: {
+    displayName: 'Academy Header';
+    pluralName: 'academy-headers';
+    singularName: 'academy-header';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::academy-header.academy-header'
+    > &
+      Schema.Attribute.Private;
+    menus: Schema.Attribute.Component<'component.header-item', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    saleBanner: Schema.Attribute.Component<'component.sale-banner', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiAllEventAllEvent extends Struct.SingleTypeSchema {
+  collectionName: 'all_events';
+  info: {
+    description: '';
+    displayName: 'All Event';
+    pluralName: 'all-events';
+    singularName: 'all-event';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'event-section.what-s-new',
+        'event-section.daily-news-letter',
+        'event-section.partner-with-us',
+        'event-section.event-insights',
+        'event-section.join-the-comunity',
+        'event-section.promate-and-connect',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    event_category: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::event-category.event-category'
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::all-event.all-event'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiAssessmentDetailAssessmentDetail
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'assessment_details';
+  info: {
+    description: '';
+    displayName: 'Assessment Detail';
+    pluralName: 'assessment-details';
+    singularName: 'assessment-detail';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'section.ct-18-banner',
+        'section.our-clients',
+        'assessment-section.our-features',
+        'assessment-section.onboarding-steps',
+        'assessment-section.tailored-plans',
+        'assessment-components.service-request-cta',
+        'section.review-details',
+        'section.social-network-ratings',
+        'assessment-section.how-to-use-the-platform',
+        'component.cta-content-block',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::assessment-detail.assessment-detail'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'name'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiAssessmentHomepageAssessmentHomepage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'assessment_homepages';
+  info: {
+    description: '';
+    displayName: 'Assessment Homepage';
+    pluralName: 'assessment-homepages';
+    singularName: 'assessment-homepage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'section.ct-17-banner',
+        'section.our-clients',
+        'assessment-section.proven-performance',
+        'assessment-section.tailored-assessment-solutions',
+        'assessment-section.tailored-plans',
+        'assessment-components.service-request-cta',
+        'section.review-details',
+        'section.social-network-ratings',
+        'component.cta-content-block',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::assessment-homepage.assessment-homepage'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiAuthorAuthor extends Struct.CollectionTypeSchema {
   collectionName: 'authors';
   info: {
@@ -431,6 +636,707 @@ export interface ApiAuthorAuthor extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     username: Schema.Attribute.String & Schema.Attribute.Unique;
     yearOfExp: Schema.Attribute.Decimal;
+  };
+}
+
+export interface ApiB2BAcademyCategoryB2BAcademyCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'b2_b_academy_categories';
+  info: {
+    description: '';
+    displayName: 'B2B Academy Category';
+    pluralName: 'b2-b-academy-categories';
+    singularName: 'b2-b-academy-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-b-academy-category.b2-b-academy-category'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    order: Schema.Attribute.BigInteger;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiB2BAuthorB2BAuthor extends Struct.CollectionTypeSchema {
+  collectionName: 'b2_b_authors';
+  info: {
+    displayName: 'B2B Author';
+    pluralName: 'b2-b-authors';
+    singularName: 'b2-b-author';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    about: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    certifications: Schema.Attribute.Component<'component.features', true>;
+    company: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    designation: Schema.Attribute.String;
+    email: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    experience: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-b-author.b2-b-author'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    qualification: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
+    socialMediaLinks: Schema.Attribute.Component<
+      'blog-component.social-media-links',
+      true
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    username: Schema.Attribute.String & Schema.Attribute.Unique;
+    yearOfExp: Schema.Attribute.Decimal;
+  };
+}
+
+export interface ApiB2BBlogCategoryB2BBlogCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'b2_b_blog_categories';
+  info: {
+    displayName: 'B2B Blog Category';
+    pluralName: 'b2-b-blog-categories';
+    singularName: 'b2-b-blog-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-b-blog-category.b2-b-blog-category'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiB2BBlogB2BBlog extends Struct.CollectionTypeSchema {
+  collectionName: 'b2_b_blogs';
+  info: {
+    description: '';
+    displayName: 'B2B Blog';
+    pluralName: 'b2-b-blogs';
+    singularName: 'b2-b-blog';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    b_2_b_author: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::b2-b-author.b2-b-author'
+    >;
+    b_2_b_blog_category: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::b2-b-blog-category.b2-b-blog-category'
+    >;
+    bannerImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'blog-section.table-of-contents',
+        'blog-section.blog-definition',
+        'blog-section.video-content-block',
+        'blog-section.content-banner',
+        'blog-section.highlight-block',
+        'blog-section.signup-newsletter',
+        'blog-component.code-text-editor',
+        'blog-component.image',
+        'blog-section.background-highlight-block',
+        'blog-section.comparison-table',
+        'blog-section.free-guide-button',
+        'blog-section.title-with-description',
+        'section.faq-details',
+        'blog-component.social-media-links',
+        'blog-section.recommended-blogs',
+        'blog-section.recommended-courses',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    durationInMinutes: Schema.Attribute.Integer;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    isFeatured: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-b-blog.b2-b-blog'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    recommentedArticle: Schema.Attribute.Component<
+      'blog-section.related-articles',
+      false
+    >;
+    recommentedCourse: Schema.Attribute.Component<
+      'blog-section.recommended-course',
+      false
+    >;
+    relatedArticles: Schema.Attribute.Component<
+      'blog-section.related-articles',
+      false
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    viewCount: Schema.Attribute.Integer;
+  };
+}
+
+export interface ApiB2BEBookDetailB2BEBookDetail
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'b2_b_e_book_details';
+  info: {
+    description: '';
+    displayName: 'B2B EBook Detail';
+    pluralName: 'b2-b-e-book-details';
+    singularName: 'b2-b-e-book-detail';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    b_2_b_author: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::b2-b-author.b2-b-author'
+    >;
+    b_2_b_resource_type: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::b2-b-resource-type.b2-b-resource-type'
+    >;
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'section.e-book-beginner-guide',
+        'section.about-e-book',
+        'section.recommended-articles',
+        'section.recommended-course',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    durationInMin: Schema.Attribute.BigInteger;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-b-e-book-detail.b2-b-e-book-detail'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    published: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'name'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiB2BEBookListingB2BEBookListing
+  extends Struct.SingleTypeSchema {
+  collectionName: 'b2_b_e_book_listings';
+  info: {
+    description: '';
+    displayName: 'B2B EBook Listing';
+    pluralName: 'b2-b-e-book-listings';
+    singularName: 'b2-b-e-book-listing';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'section.ct-16-banner',
+        'section.horizontal-navbar',
+        'section.e-books',
+        'component.cta-content-block',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-b-e-book-listing.b2-b-e-book-listing'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiB2BFooterB2BFooter extends Struct.SingleTypeSchema {
+  collectionName: 'b2_b_footers';
+  info: {
+    displayName: 'B2B Footer';
+    pluralName: 'b2-b-footers';
+    singularName: 'b2-b-footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    company: Schema.Attribute.Component<'footer.company-links', false>;
+    CopyRightInfo: Schema.Attribute.RichText &
+      Schema.Attribute.Required &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-b-footer.b2-b-footer'
+    > &
+      Schema.Attribute.Private;
+    mastersPrograms: Schema.Attribute.Component<'footer.courses', false>;
+    mediaLinks: Schema.Attribute.Component<'footer.media-links', false>;
+    partnerWithUs: Schema.Attribute.Component<'footer.partner-with-us', false>;
+    policies: Schema.Attribute.Component<'footer.policies', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    resources: Schema.Attribute.Component<'footer.resources', false>;
+    support: Schema.Attribute.Component<'footer.support', false>;
+    supportContact: Schema.Attribute.Component<'footer.support-contact', true>;
+    topCategories: Schema.Attribute.Component<'footer.categories', false>;
+    topCourses: Schema.Attribute.Component<'footer.courses', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiB2BHompageB2BHompage extends Struct.SingleTypeSchema {
+  collectionName: 'b2_b_hompages';
+  info: {
+    description: '';
+    displayName: 'B2B Hompage';
+    pluralName: 'b2-b-hompages';
+    singularName: 'b2-b-hompage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'section.ct-13-banner',
+        'section.our-clients',
+        'section.end-to-end-solutions',
+        'section.academies',
+        'section.tech-skills-cta',
+        'section.why-techademy',
+        'section.business-impact',
+        'section.learning-hub',
+        'component.cta-content-block',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-b-hompage.b2-b-hompage'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiB2BResourceTypeB2BResourceType
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'b2_b_resource_types';
+  info: {
+    displayName: 'B2B Resource Type';
+    pluralName: 'b2-b-resource-types';
+    singularName: 'b2-b-resource-type';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    label: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-b-resource-type.b2-b-resource-type'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    redirectUrl: Schema.Attribute.String;
+    type: Schema.Attribute.Enumeration<['button', 'href']>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiB2BWebinarDetailB2BWebinarDetail
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'b2_b_webinar_details';
+  info: {
+    description: '';
+    displayName: 'B2B  Webinar Detail';
+    pluralName: 'b2-b-webinar-details';
+    singularName: 'b2-b-webinar-detail';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    b_2_b_resource_type: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::b2-b-resource-type.b2-b-resource-type'
+    >;
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'section.ct-15-banner',
+        'webinar-section.about-webinar',
+        'webinar-section.what-you-will-gain',
+        'webinar-section.meet-the-trainer',
+        'webinar-section.who-can-attend',
+        'section.review-details',
+        'webinar-section.career-transition',
+        'webinar-section.about-us',
+        'webinar-section.recommended-webinars',
+        'webinar-section.faq-details-on-webinar',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-b-webinar-detail.b2-b-webinar-detail'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'name'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiB2BWebinarListingB2BWebinarListing
+  extends Struct.SingleTypeSchema {
+  collectionName: 'b2_b_webinar_listings';
+  info: {
+    description: '';
+    displayName: 'B2B Webinar Listing';
+    pluralName: 'b2-b-webinar-listings';
+    singularName: 'b2-b-webinar-listing';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'section.ct-14-banner',
+        'webinar-section.webinars',
+        'webinar-section.horizontal-menu',
+        'component.cta-content-block',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-b-webinar-listing.b2-b-webinar-listing'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiB2CAcademyB2CAcademy extends Struct.CollectionTypeSchema {
+  collectionName: 'b2_c_academies';
+  info: {
+    description: '';
+    displayName: 'B2B Academy';
+    pluralName: 'b2-c-academies';
+    singularName: 'b2-c-academy';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    b_2_b_academy_category: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::b2-b-academy-category.b2-b-academy-category'
+    >;
+    category: Schema.Attribute.Relation<'oneToOne', 'api::category.category'>;
+    code: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    content: Schema.Attribute.DynamicZone<
+      [
+        'section.ct-8-banner',
+        'section.quick-facts',
+        'section.highlights',
+        'section.tools-covered',
+        'section.why-profela',
+        'component.got-a-question',
+        'section.what-you-will-learn',
+        'section.faq-details',
+        'section.our-clients',
+        'section.review-details',
+        'section.course-summary',
+        'section.demand-increased',
+        'section.left-side-bar-menu-2',
+        'section.growth-numbers',
+        'section.meet-the-team-more-details-2',
+        'section.social-network-ratings',
+      ]
+    >;
+    country: Schema.Attribute.Relation<'oneToOne', 'api::country.country'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    deliveryType: Schema.Attribute.JSON &
+      Schema.Attribute.CustomField<
+        'plugin::multi-select.multi-select',
+        ['Classroom', 'Self Paced', 'Live Online Classroom']
+      >;
+    durationInHrs: Schema.Attribute.Integer;
+    enableLandingPage: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    enablePlanDetail: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
+    enableStickyFooter: Schema.Attribute.Boolean;
+    enrolledLearners: Schema.Attribute.Integer;
+    global_accreditation: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::global-accreditation.global-accreditation'
+    >;
+    heading: Schema.Attribute.String & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    isBestSeller: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    isJobAssistant: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    isNew: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    isPopular: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    isRecommended: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    isTrending: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-c-academy.b2-c-academy'
+    > &
+      Schema.Attribute.Private;
+    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    masterCourse: Schema.Attribute.String &
+      Schema.Attribute.CustomField<
+        'plugin::custom-dropdown.custom-dropdown',
+        {
+          collectionType: 'course_template_1s';
+        }
+      >;
+    order: Schema.Attribute.Integer;
+    pageType: Schema.Attribute.Enumeration<
+      ['Academy', 'Training', 'Certification', 'Bootcamp']
+    >;
+    planDetails: Schema.Attribute.Component<
+      'component.upgrade-plan-pop-up',
+      false
+    >;
+    prices: Schema.Attribute.Component<'component.course-price', true>;
+    pricingInfo: Schema.Attribute.JSON;
+    publishedAt: Schema.Attribute.DateTime;
+    registerForWebinar: Schema.Attribute.Text;
+    registerForWebinarButton: Schema.Attribute.Component<
+      'blog-component.button-details',
+      false
+    >;
+    roles: Schema.Attribute.Enumeration<['user-1', 'user-2']>;
+    scheduleListVerion: Schema.Attribute.Enumeration<['V1', 'V2', 'V3']> &
+      Schema.Attribute.DefaultTo<'V1'>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    tag: Schema.Attribute.String;
+    timezone: Schema.Attribute.Relation<'oneToOne', 'api::timezone.timezone'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiB2CFooterB2CFooter extends Struct.SingleTypeSchema {
+  collectionName: 'b2_c_footers';
+  info: {
+    displayName: 'B2C Footer';
+    pluralName: 'b2-c-footers';
+    singularName: 'b2-c-footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    company: Schema.Attribute.Component<'footer.company-links', false>;
+    CopyRightInfo: Schema.Attribute.RichText &
+      Schema.Attribute.Required &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-c-footer.b2-c-footer'
+    > &
+      Schema.Attribute.Private;
+    mastersPrograms: Schema.Attribute.Component<'footer.courses', false>;
+    mediaLinks: Schema.Attribute.Component<'footer.media-links', false>;
+    partnerWithUs: Schema.Attribute.Component<'footer.partner-with-us', false>;
+    policies: Schema.Attribute.Component<'footer.policies', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    resources: Schema.Attribute.Component<'footer.resources', false>;
+    support: Schema.Attribute.Component<'footer.support', false>;
+    supportContact: Schema.Attribute.Component<'footer.support-contact', true>;
+    topCategories: Schema.Attribute.Component<'footer.categories', false>;
+    topCourses: Schema.Attribute.Component<'footer.courses', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiB2CHomepageB2CHomepage extends Struct.SingleTypeSchema {
+  collectionName: 'b2_c_homepages';
+  info: {
+    displayName: 'B2C Homepage';
+    pluralName: 'b2-c-homepages';
+    singularName: 'b2-c-homepage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'section.ct-7-banner',
+        'component.trusted-by-companies',
+        'section.learning-experience',
+        'section.learner-testimonials',
+        'section.industry-leaders',
+        'section.enterprises-are-saying',
+        'section.why-techademy',
+        'section.our-support-system',
+        'component.got-a-question',
+        'section.ct-10-banner',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::b2-c-homepage.b2-c-homepage'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
   };
 }
 
@@ -602,6 +1508,10 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
       'blog-section.recommended-course',
       false
     >;
+    redirectUrl: Schema.Attribute.Component<
+      'component.button-with-icon',
+      false
+    >;
     relatedArticles: Schema.Attribute.Component<
       'blog-section.related-articles',
       false
@@ -631,13 +1541,6 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    heading: Schema.Attribute.RichText &
-      Schema.Attribute.CustomField<
-        'plugin::ckeditor5.CKEditor',
-        {
-          preset: 'defaultMarkdown';
-        }
-      >;
     icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -742,6 +1645,7 @@ export interface ApiCourseTemplate1CourseTemplate1
         'section.who-should-attend-course',
         'landing-page-section.course-features',
         'section.ct-4-banner',
+        'section.ct-6-banner',
       ]
     >;
     country: Schema.Attribute.Relation<'oneToOne', 'api::country.country'>;
@@ -755,6 +1659,10 @@ export interface ApiCourseTemplate1CourseTemplate1
       >;
     durationInHrs: Schema.Attribute.Integer;
     enableLandingPage: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    enablePlanDetail: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
+    enableRolesInLeadForm: Schema.Attribute.Boolean &
       Schema.Attribute.DefaultTo<false>;
     enableStickyFooter: Schema.Attribute.Boolean;
     enrolledLearners: Schema.Attribute.Integer;
@@ -779,11 +1687,25 @@ export interface ApiCourseTemplate1CourseTemplate1
       Schema.Attribute.Private;
     logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     masterCourse: Schema.Attribute.String &
-      Schema.Attribute.CustomField<'plugin::custom-dropdown.custom-dropdown'>;
+      Schema.Attribute.CustomField<
+        'plugin::custom-dropdown.custom-dropdown',
+        {
+          collectionType: 'course_template_1s';
+        }
+      >;
     order: Schema.Attribute.Integer;
+    planDetails: Schema.Attribute.Component<
+      'component.upgrade-plan-pop-up',
+      false
+    >;
     prices: Schema.Attribute.Component<'component.course-price', true>;
     pricingInfo: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
+    registerForWebinar: Schema.Attribute.Text;
+    registerForWebinarButton: Schema.Attribute.Component<
+      'component.button-details',
+      false
+    >;
     scheduleListVerion: Schema.Attribute.Enumeration<['V1', 'V2', 'V3']> &
       Schema.Attribute.DefaultTo<'V1'>;
     seo: Schema.Attribute.Component<'shared.seo', false>;
@@ -792,6 +1714,7 @@ export interface ApiCourseTemplate1CourseTemplate1
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    zohoCrmCourseId: Schema.Attribute.String;
   };
 }
 
@@ -821,6 +1744,157 @@ export interface ApiCurrencyCurrency extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     symbol: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiEventCategoryEventCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'event_categories';
+  info: {
+    displayName: 'Event Category';
+    pluralName: 'event-categories';
+    singularName: 'event-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    code: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    icon: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::event-category.event-category'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    order: Schema.Attribute.BigInteger;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiEventFooterEventFooter extends Struct.SingleTypeSchema {
+  collectionName: 'event_footers';
+  info: {
+    description: '';
+    displayName: 'Event Footer';
+    pluralName: 'event-footers';
+    singularName: 'event-footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    CopyRightInfo: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    discoverEvents: Schema.Attribute.Component<'footer.company-links', false>;
+    explore: Schema.Attribute.Component<'footer.company-links', false>;
+    hostEvents: Schema.Attribute.Component<'footer.company-links', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::event-footer.event-footer'
+    > &
+      Schema.Attribute.Private;
+    partnerWithUs: Schema.Attribute.Component<'footer.company-links', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    upcomingEvents: Schema.Attribute.Component<'footer.company-links', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiEventHeaderEventHeader extends Struct.SingleTypeSchema {
+  collectionName: 'event_headers';
+  info: {
+    displayName: 'Event Header';
+    pluralName: 'event-headers';
+    singularName: 'event-header';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::event-header.event-header'
+    > &
+      Schema.Attribute.Private;
+    menus: Schema.Attribute.Component<'component.header-item', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    saleBanner: Schema.Attribute.Component<'component.sale-banner', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiEventEvent extends Struct.CollectionTypeSchema {
+  collectionName: 'events';
+  info: {
+    description: '';
+    displayName: 'Event';
+    pluralName: 'events';
+    singularName: 'event';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    code: Schema.Attribute.UID<'heading'>;
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'section.ct-9-banner',
+        'event-section.event-summary',
+        'event-section.conference-tracks',
+        'event-section.why-attend',
+        'event-section.our-sponsers',
+        'event-section.what-participants-say-about-us',
+        'event-section.faq-details',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    eventDate: Schema.Attribute.DateTime;
+    eventType: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::event.event'> &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.Relation<'oneToOne', 'api::location.location'>;
+    planDetails: Schema.Attribute.Component<
+      'component.upgrade-plan-pop-up',
+      false
+    >;
+    prices: Schema.Attribute.Component<'component.course-price', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1032,6 +2106,34 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiLocationLocation extends Struct.CollectionTypeSchema {
+  collectionName: 'locations';
+  info: {
+    displayName: 'Location';
+    pluralName: 'locations';
+    singularName: 'location';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::location.location'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiLpHeaderLpHeader extends Struct.SingleTypeSchema {
   collectionName: 'lp_headers';
   info: {
@@ -1132,6 +2234,50 @@ export interface ApiPopUpPopUp extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiSolutionPageSolutionPage
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'solution_pages';
+  info: {
+    displayName: 'Solution Page';
+    pluralName: 'solution-pages';
+    singularName: 'solution-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'section.business-impact',
+        'section.what-sets-techademy',
+        'section.skill-mastery',
+        'section.our-process',
+        'section.case-studies',
+        'section.our-clients',
+        'section.learning-hub',
+        'section.challenge-your-workforce',
+        'section.ct-17-banner',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::solution-page.solution-page'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'name'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiTimezoneTimezone extends Struct.CollectionTypeSchema {
   collectionName: 'timezones';
   info: {
@@ -1158,6 +2304,237 @@ export interface ApiTimezoneTimezone extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiWebinarCategoryWebinarCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'webinar_categories';
+  info: {
+    displayName: 'Webinar Category';
+    pluralName: 'webinar-categories';
+    singularName: 'webinar-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    code: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::webinar-category.webinar-category'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    order: Schema.Attribute.BigInteger;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiWebinarFooterWebinarFooter extends Struct.SingleTypeSchema {
+  collectionName: 'webinar_footers';
+  info: {
+    displayName: 'Webinar Footer';
+    pluralName: 'webinar-footers';
+    singularName: 'webinar-footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    CopyRightInfo: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::webinar-footer.webinar-footer'
+    > &
+      Schema.Attribute.Private;
+    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiWebinarListingWebinarListing
+  extends Struct.SingleTypeSchema {
+  collectionName: 'webinar_listings';
+  info: {
+    description: '';
+    displayName: 'Webinar Listing';
+    pluralName: 'webinar-listings';
+    singularName: 'webinar-listing';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contents: Schema.Attribute.DynamicZone<['section.ct-11-banner']>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::webinar-listing.webinar-listing'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiWebinarV2WebinarV2 extends Struct.CollectionTypeSchema {
+  collectionName: 'webinar_v2s';
+  info: {
+    description: '';
+    displayName: 'Webinar V2';
+    pluralName: 'webinar-v2s';
+    singularName: 'webinar-v2';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contents: Schema.Attribute.DynamicZone<
+      [
+        'section.ct-12-banner',
+        'webinar-section.why-this-course',
+        'webinar-section.what-will-you-learn',
+        'webinar-section.why-this-program',
+        'webinar-section.career-benifits',
+        'webinar-section.live-training-promo',
+        'webinar-section.know-your-mentors',
+        'webinar-section.professional-testimonials',
+        'webinar-section.exclusive-bonus-pack',
+        'webinar-section.faq-details',
+        'webinar-section.unlock-the-ai-advantage',
+        'webinar-section.who-should-attend-workshop',
+        'webinar-section.sticky-footer',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::webinar-v2.webinar-v2'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    noOfRegisteredUsers: Schema.Attribute.BigInteger;
+    publishedAt: Schema.Attribute.DateTime;
+    registerNowButton: Schema.Attribute.Component<
+      'component.button-details',
+      false
+    >;
+    saleBanner: Schema.Attribute.Component<
+      'webinar-component.sale-banner',
+      false
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'name'>;
+    thankYouPageDetails: Schema.Attribute.Component<
+      'webinar-component.thank-you-page',
+      false
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    webinar_category: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::webinar-category.webinar-category'
+    >;
+    webinarEndsAt: Schema.Attribute.DateTime;
+    webinarStartsAt: Schema.Attribute.DateTime;
+    webinarWebHookURL: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface ApiWebinarWebinar extends Struct.CollectionTypeSchema {
+  collectionName: 'webinars';
+  info: {
+    description: '';
+    displayName: 'Webinar Old';
+    pluralName: 'webinars';
+    singularName: 'webinar';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    banner: Schema.Attribute.Component<
+      'webinar-component.banner-section',
+      false
+    >;
+    blog: Schema.Attribute.Component<'webinar-component.blog-section', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    highlights: Schema.Attribute.Component<
+      'webinar-component.highlight-section',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::webinar.webinar'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    redirectUrl: Schema.Attribute.Component<
+      'component.button-with-icon',
+      false
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    sidebar: Schema.Attribute.Component<
+      'webinar-component.sidebar-section',
+      false
+    >;
+    slots: Schema.Attribute.Component<'section.slot-details', false>;
+    slug: Schema.Attribute.UID<'name'>;
+    success_story: Schema.Attribute.Component<
+      'webinar-component.success-story-section',
+      false
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    workforce: Schema.Attribute.Component<
+      'webinar-component.list-of-workforce',
+      false
+    >;
   };
 }
 
@@ -1670,7 +3047,26 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::academy-footer.academy-footer': ApiAcademyFooterAcademyFooter;
+      'api::academy-header.academy-header': ApiAcademyHeaderAcademyHeader;
+      'api::all-event.all-event': ApiAllEventAllEvent;
+      'api::assessment-detail.assessment-detail': ApiAssessmentDetailAssessmentDetail;
+      'api::assessment-homepage.assessment-homepage': ApiAssessmentHomepageAssessmentHomepage;
       'api::author.author': ApiAuthorAuthor;
+      'api::b2-b-academy-category.b2-b-academy-category': ApiB2BAcademyCategoryB2BAcademyCategory;
+      'api::b2-b-author.b2-b-author': ApiB2BAuthorB2BAuthor;
+      'api::b2-b-blog-category.b2-b-blog-category': ApiB2BBlogCategoryB2BBlogCategory;
+      'api::b2-b-blog.b2-b-blog': ApiB2BBlogB2BBlog;
+      'api::b2-b-e-book-detail.b2-b-e-book-detail': ApiB2BEBookDetailB2BEBookDetail;
+      'api::b2-b-e-book-listing.b2-b-e-book-listing': ApiB2BEBookListingB2BEBookListing;
+      'api::b2-b-footer.b2-b-footer': ApiB2BFooterB2BFooter;
+      'api::b2-b-hompage.b2-b-hompage': ApiB2BHompageB2BHompage;
+      'api::b2-b-resource-type.b2-b-resource-type': ApiB2BResourceTypeB2BResourceType;
+      'api::b2-b-webinar-detail.b2-b-webinar-detail': ApiB2BWebinarDetailB2BWebinarDetail;
+      'api::b2-b-webinar-listing.b2-b-webinar-listing': ApiB2BWebinarListingB2BWebinarListing;
+      'api::b2-c-academy.b2-c-academy': ApiB2CAcademyB2CAcademy;
+      'api::b2-c-footer.b2-c-footer': ApiB2CFooterB2CFooter;
+      'api::b2-c-homepage.b2-c-homepage': ApiB2CHomepageB2CHomepage;
       'api::become-an-instructor.become-an-instructor': ApiBecomeAnInstructorBecomeAnInstructor;
       'api::blog-category.blog-category': ApiBlogCategoryBlogCategory;
       'api::blog-listing-page.blog-listing-page': ApiBlogListingPageBlogListingPage;
@@ -1679,15 +3075,26 @@ declare module '@strapi/strapi' {
       'api::country.country': ApiCountryCountry;
       'api::course-template-1.course-template-1': ApiCourseTemplate1CourseTemplate1;
       'api::currency.currency': ApiCurrencyCurrency;
+      'api::event-category.event-category': ApiEventCategoryEventCategory;
+      'api::event-footer.event-footer': ApiEventFooterEventFooter;
+      'api::event-header.event-header': ApiEventHeaderEventHeader;
+      'api::event.event': ApiEventEvent;
       'api::footer.footer': ApiFooterFooter;
       'api::global-accreditation.global-accreditation': ApiGlobalAccreditationGlobalAccreditation;
       'api::header.header': ApiHeaderHeader;
       'api::homepage.homepage': ApiHomepageHomepage;
       'api::landing-page.landing-page': ApiLandingPageLandingPage;
+      'api::location.location': ApiLocationLocation;
       'api::lp-header.lp-header': ApiLpHeaderLpHeader;
       'api::mega-menu.mega-menu': ApiMegaMenuMegaMenu;
       'api::pop-up.pop-up': ApiPopUpPopUp;
+      'api::solution-page.solution-page': ApiSolutionPageSolutionPage;
       'api::timezone.timezone': ApiTimezoneTimezone;
+      'api::webinar-category.webinar-category': ApiWebinarCategoryWebinarCategory;
+      'api::webinar-footer.webinar-footer': ApiWebinarFooterWebinarFooter;
+      'api::webinar-listing.webinar-listing': ApiWebinarListingWebinarListing;
+      'api::webinar-v2.webinar-v2': ApiWebinarV2WebinarV2;
+      'api::webinar.webinar': ApiWebinarWebinar;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

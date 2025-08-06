@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_webinar_section_recommended_webinars",
+  "info": {
+    "displayName": "Recommended Webinars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "label": {
+      "type": "component",
+      "repeatable": false,
+      "component": "webinar-component.icon-title-color-code"
+    },
+    "webinarList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "webinar-component.webinar-details"
+    }
+  }
+}

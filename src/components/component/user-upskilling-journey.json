@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_component_user_upskilling_journeys",
+  "info": {
+    "displayName": "User Upskilling Journey",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "companyLogo1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-with-title"
+    },
+    "companyLogo2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-with-title"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

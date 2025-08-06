@@ -31,6 +31,13 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::country.country"
+    },
+    "masterCourse": {
+      "type": "customField",
+      "customField": "plugin::custom-dropdown.custom-dropdown",
+      "options": {
+        "collectionType": "sale_banner"
+      }
     }
   }
 }

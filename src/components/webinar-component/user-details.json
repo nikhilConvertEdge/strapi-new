@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_webinar_component_user_details",
+  "info": {
+    "displayName": "User Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "name": {
+      "type": "text"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "review": {
+      "type": "decimal"
+    },
+    "isVerified": {
+      "type": "boolean",
+      "default": false
+    },
+    "reviewTitle": {
+      "type": "string"
+    },
+    "reviewDescription": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "date": {
+      "type": "datetime"
+    }
+  }
+}

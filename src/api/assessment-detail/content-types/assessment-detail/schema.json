@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assessment_details",
+  "info": {
+    "singularName": "assessment-detail",
+    "pluralName": "assessment-details",
+    "displayName": "Assessment Detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "section.ct-18-banner",
+        "section.our-clients",
+        "assessment-section.our-features",
+        "assessment-section.onboarding-steps",
+        "assessment-section.tailored-plans",
+        "assessment-components.service-request-cta",
+        "section.review-details",
+        "section.social-network-ratings",
+        "assessment-section.how-to-use-the-platform",
+        "component.cta-content-block"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}

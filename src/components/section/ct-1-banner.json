@@ -97,14 +97,33 @@
       "type": "string"
     },
     "curriculumFile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "registerForDemoButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "registerForWebinar": {
+      "type": "text"
+    },
+    "registerForWebinarButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.button-details"
+    },
+    "recognitionLabel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-with-description"
     }
   }
 }

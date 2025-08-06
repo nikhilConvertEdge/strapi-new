@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "b2_b_webinar_listings",
+  "info": {
+    "singularName": "b2-b-webinar-listing",
+    "pluralName": "b2-b-webinar-listings",
+    "displayName": "B2B Webinar Listing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "section.ct-14-banner",
+        "webinar-section.webinars",
+        "webinar-section.horizontal-menu",
+        "component.cta-content-block"
+      ]
+    }
+  }
+}

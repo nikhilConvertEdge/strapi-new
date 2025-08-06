@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_section_what_you_will_learn_s",
+  "info": {
+    "displayName": "What You Will Learn?"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "learningDeatils": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.advantages-2"
+    },
+    "becomeProjectManagerButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.button-details"
+    }
+  }
+}

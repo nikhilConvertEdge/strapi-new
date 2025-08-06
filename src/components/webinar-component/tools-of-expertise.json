@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_webinar_component_tools_of_expertises",
+  "info": {
+    "displayName": "Tools Of Expertise"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "tools": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

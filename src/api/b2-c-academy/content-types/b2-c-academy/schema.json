@@ -1,0 +1,182 @@
+{
+  "kind": "collectionType",
+  "collectionName": "b2_c_academies",
+  "info": {
+    "singularName": "b2-c-academy",
+    "pluralName": "b2-c-academies",
+    "displayName": "B2B Academy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "global_accreditation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::global-accreditation.global-accreditation"
+    },
+    "isBestSeller": {
+      "type": "boolean",
+      "default": false
+    },
+    "isTrending": {
+      "type": "boolean",
+      "default": false
+    },
+    "isRecommended": {
+      "type": "boolean",
+      "default": false
+    },
+    "isPopular": {
+      "type": "boolean",
+      "default": false
+    },
+    "isNew": {
+      "type": "boolean",
+      "default": false
+    },
+    "pricingInfo": {
+      "type": "json"
+    },
+    "prices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.course-price"
+    },
+    "enrolledLearners": {
+      "type": "integer"
+    },
+    "durationInHrs": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "tag": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "enableLandingPage": {
+      "type": "boolean",
+      "default": false
+    },
+    "enableStickyFooter": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "scheduleListVerion": {
+      "type": "enumeration",
+      "enum": ["V1", "V2", "V3"],
+      "default": "V1"
+    },
+    "isJobAssistant": {
+      "type": "boolean",
+      "default": false
+    },
+
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "timezone": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::timezone.timezone"
+    },
+    "planDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.upgrade-plan-pop-up"
+    },
+    "enablePlanDetail": {
+      "type": "boolean",
+      "default": true
+    },
+    "roles": {
+      "type": "enumeration",
+      "enum": ["user-1", "user-2"]
+    },
+    "registerForWebinar": {
+      "type": "text"
+    },
+    "registerForWebinarButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.button-details"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "section.ct-8-banner",
+        "section.quick-facts",
+        "section.highlights",
+        "section.tools-covered",
+        "section.why-profela",
+        "component.got-a-question",
+        "section.what-you-will-learn",
+        "section.faq-details",
+        "section.our-clients",
+        "section.review-details",
+        "section.course-summary",
+        "section.demand-increased",
+        "section.left-side-bar-menu-2",
+        "section.growth-numbers",
+        "section.meet-the-team-more-details-2",
+        "section.social-network-ratings"
+      ]
+    },
+    "b_2_b_academy_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::b2-b-academy-category.b2-b-academy-category"
+    },
+    "deliveryType": {
+      "type": "customField",
+      "options": ["Classroom", "Self Paced", "Live Online Classroom"],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "pageType": {
+      "type": "enumeration",
+      "enum": ["Academy", "Training", "Certification", "Bootcamp"]
+    },
+    "masterCourse": {
+      "type": "customField",
+      "customField": "plugin::custom-dropdown.custom-dropdown",
+      "options": {
+        "collectionType": "course_template_1s"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_component_course_overviews",
+  "info": {
+    "displayName": "Course Overview",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "noOfTracks": {
+      "type": "biginteger"
+    },
+    "noOfLessons": {
+      "type": "biginteger"
+    },
+    "noOfTools": {
+      "type": "biginteger"
+    },
+    "courseTrackOverview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.course-track-overview"
+    }
+  }
+}

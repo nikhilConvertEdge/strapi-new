@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_webinar_component_input_with_multi_selects",
+  "info": {
+    "displayName": "Input With MultiSelect"
+  },
+  "options": {},
+  "attributes": {
+    "time": {
+      "type": "string"
+    },
+    "timezones": {
+      "type": "customField",
+      "options": ["EDT", "PDT", "CDT", "EST", "CST", "MST", "MDT"],
+      "customField": "plugin::multi-select.multi-select"
+    }
+  }
+}

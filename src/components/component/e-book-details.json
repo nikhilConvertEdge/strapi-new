@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_component_e_book_details",
+  "info": {
+    "displayName": "EBook Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "string"
+    },
+    "viewCount": {
+      "type": "biginteger"
+    },
+    "redirectUrl": {
+      "type": "text"
+    }
+  }
+}

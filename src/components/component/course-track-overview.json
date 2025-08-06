@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_component_course_track_overviews",
+  "info": {
+    "displayName": "Course Track Overview",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "courseTrackOverview": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.course-track-details"
+    }
+  }
+}

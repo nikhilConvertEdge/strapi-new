@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_webinar_component_highlights",
+  "info": {
+    "displayName": "Highlights"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "feature": {
+      "type": "blocks"
+    }
+  }
+}

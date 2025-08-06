@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_webinar_component_career_transition_d",
+  "info": {
+    "displayName": "Career Transition Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.icon-with-title"
+    },
+    "profile": {
+      "type": "component",
+      "repeatable": false,
+      "component": "webinar-component.profile"
+    },
+    "beforeAfterSuccess": {
+      "type": "component",
+      "repeatable": false,
+      "component": "webinar-component.before-after-success"
+    }
+  }
+}

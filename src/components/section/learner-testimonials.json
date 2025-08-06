@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_section_learner_testimonials",
+  "info": {
+    "displayName": "User Testimonials",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "testimonialReviews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.testimonial-card"
+    }
+  }
+}

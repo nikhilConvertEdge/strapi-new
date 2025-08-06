@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_webinar_component_webinar_features",
+  "info": {
+    "displayName": "Webinar Features",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "featureType": {
+      "type": "enumeration",
+      "enum": [
+        "post",
+        "video",
+        "image"
+      ]
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "webinar-component.feature-with-icon"
+    },
+    "freeRegistrationButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "webinar-component.button-with-sub-title"
+    },
+    "webinarStartsAt": {
+      "type": "datetime"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "videoUrl": {
+      "type": "string"
+    }
+  }
+}

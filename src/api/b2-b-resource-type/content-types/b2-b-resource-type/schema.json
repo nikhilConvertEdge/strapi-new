@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "b2_b_resource_types",
+  "info": {
+    "singularName": "b2-b-resource-type",
+    "pluralName": "b2-b-resource-types",
+    "displayName": "B2B Resource Type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "button",
+        "href"
+      ]
+    },
+    "redirectUrl": {
+      "type": "string"
+    }
+  }
+}

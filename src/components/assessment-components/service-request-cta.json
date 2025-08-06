@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_assessment_components_service_request",
+  "info": {
+    "displayName": "Service Request CTA"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "customizedAssessmentsButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

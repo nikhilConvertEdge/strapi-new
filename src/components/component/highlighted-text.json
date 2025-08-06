@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_component_highlighted_texts",
+  "info": {
+    "displayName": "Highlighted Text"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "colorCode": {
+      "type": "string"
+    }
+  }
+}

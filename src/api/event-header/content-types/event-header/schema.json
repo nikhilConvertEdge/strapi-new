@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "event_headers",
+  "info": {
+    "singularName": "event-header",
+    "pluralName": "event-headers",
+    "displayName": "Event Header"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+
+  "attributes": {
+    "menus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.header-item"
+    },
+    "saleBanner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.sale-banner"
+    }
+  }
+}

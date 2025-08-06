@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_component_icon_with_titles",
+  "info": {
+    "displayName": "Icon With Title"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

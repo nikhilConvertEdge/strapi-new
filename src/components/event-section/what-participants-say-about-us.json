@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_event_section_participants_feedback",
+  "info": {
+    "displayName": "What Participants Say About Us"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "preHeading": {
+      "type": "string"
+    },
+    "participantTestimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "event-component.participant-details"
+    },
+    "subscribeToOurLetter": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.form"
+    }
+  }
+}

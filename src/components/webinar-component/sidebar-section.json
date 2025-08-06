@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_webinar_component_sidebar_sections",
+  "info": {
+    "displayName": "Sidebar Section"
+  },
+  "options": {},
+  "attributes": {
+    "webinarForm": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.text-value"
+    },
+    "formButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.register"
+    },
+    "candidateCountText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.check-list"
+    }
+  }
+}

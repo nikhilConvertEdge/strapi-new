@@ -21,7 +21,6 @@
     "description": {
       "type": "customField",
       "options": {
-       
         "preset": "defaultHtml"
       },
       "customField": "plugin::ckeditor5.CKEditor",
@@ -84,6 +83,14 @@
       "type": "media",
       "multiple": true,
       "required": true
+    },
+    "registerForWebinar": {
+      "type": "text"
+    },
+    "registerForWebinarButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-component.button-details"
     }
   }
 }

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_section_recommended_courses",
+  "info": {
+    "displayName": "Recommended Course"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "courses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.recommended-course-details"
+    },
+    "exploreAllCoursesButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "viewAllAgileCourses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

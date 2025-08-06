@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "webinar_listings",
+  "info": {
+    "singularName": "webinar-listing",
+    "pluralName": "webinar-listings",
+    "displayName": "Webinar Listing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "contents": {
+      "type": "dynamiczone",
+      "components": [
+        "section.ct-11-banner"
+      ]
+    }
+  }
+}

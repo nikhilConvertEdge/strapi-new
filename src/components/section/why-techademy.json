@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_section_why_techademies",
+  "info": {
+    "displayName": "Why Techademy",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "advantages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.advantages-2"
+    }
+  }
+}

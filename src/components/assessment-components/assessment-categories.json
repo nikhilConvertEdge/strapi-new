@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_assessment_components_assessment_cate",
+  "info": {
+    "displayName": "Assessment Categories"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "assessment-components.highlight-block"
+    }
+  }
+}

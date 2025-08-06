@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_webinar_section_about_webinars",
+  "info": {
+    "displayName": "About Webinar"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

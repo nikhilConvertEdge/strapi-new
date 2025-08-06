@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_component_check_lists",
+  "info": {
+    "displayName": "Check List",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "boldText": {
+      "type": "blocks"
+    }
+  }
+}

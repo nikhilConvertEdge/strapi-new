@@ -20,10 +20,9 @@
       "component": "component.role-wise-increased",
       "required": true
     },
-    "description":{
+    "description": {
       "type": "customField",
       "options": {
-       
         "preset": "defaultHtml"
       },
       "customField": "plugin::ckeditor5.CKEditor",

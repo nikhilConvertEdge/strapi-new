@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "b2_b_blog_categories",
+  "info": {
+    "singularName": "b2-b-blog-category",
+    "pluralName": "b2-b-blog-categories",
+    "displayName": "B2B Blog Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}

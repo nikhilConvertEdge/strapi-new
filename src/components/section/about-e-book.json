@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_about_e_books",
+  "info": {
+    "displayName": "About EBook"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

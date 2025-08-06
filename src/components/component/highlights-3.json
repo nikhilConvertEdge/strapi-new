@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_component_highlights_3s",
+  "info": {
+    "displayName": "Highlights 3"
+  },
+  "options": {},
+  "attributes": {
+    "highlightList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.learning-path-steps"
+    },
+    "ratingDetails": {
+      "displayName": "ratingDetails",
+      "type": "component",
+      "repeatable": true,
+      "component": "component.rating-details",
+      "required": true
+    }
+  }
+}

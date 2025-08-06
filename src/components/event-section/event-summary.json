@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_event_section_event_summaries",
+  "info": {
+    "displayName": "Event Summary"
+  },
+  "options": {},
+  "attributes": {
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "event-component.event-summary-details"
+    },
+    "getTicketsButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

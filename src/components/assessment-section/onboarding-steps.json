@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_assessment_section_onboarding_steps",
+  "info": {
+    "displayName": "OnboardingSteps"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.advantages"
+    },
+    "getStartedButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    }
+  }
+}

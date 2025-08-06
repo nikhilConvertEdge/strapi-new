@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_event_section_what_s_news",
+  "info": {
+    "displayName": "What's New"
+  },
+  "options": {},
+  "attributes": {
+    "latestUpdates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.image-header-description"
+    }
+  }
+}

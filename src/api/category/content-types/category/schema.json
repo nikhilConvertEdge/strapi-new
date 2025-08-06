@@ -32,13 +32,6 @@
     },
     "order": {
       "type": "integer"
-    },
-    "heading": {
-      "type": "customField",
-      "options": {
-        "preset": "defaultMarkdown"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

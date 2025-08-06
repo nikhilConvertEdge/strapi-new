@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_component_talent_journey_steps",
+  "info": {
+    "displayName": "Talent Journey Steps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.talent-journey-details"
+    }
+  }
+}

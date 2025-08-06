@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_component_slots",
+  "info": {
+    "displayName": "slots"
+  },
+  "options": {},
+  "attributes": {
+    "slot": {
+      "type": "datetime"
+    }
+  }
+}

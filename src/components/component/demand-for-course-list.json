@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_component_demand_for_course_lists",
+  "info": {
+    "displayName": "Demand For Course List"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "ponits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.points"
+    }
+  }
+}

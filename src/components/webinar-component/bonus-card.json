@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_webinar_component_bonus_cards",
+  "info": {
+    "displayName": "Bonus Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "labelIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "highlightedText": {
+      "type": "string"
+    },
+    "redirectUrl": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    }
+  }
+}

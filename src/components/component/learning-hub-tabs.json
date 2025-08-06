@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_component_learning_hub_tabs",
+  "info": {
+    "displayName": "Learning Hub Tabs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "blogList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.info-details"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_section_learning_experiences",
+  "info": {
+    "displayName": "Learning Experience"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.image-header-description"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_section_ct_12_banners",
+  "info": {
+    "displayName": "CT12 Banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "label": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "webinarDuration": {
+      "type": "string"
+    },
+    "heading2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.highlighted-text"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": false,
+      "component": "webinar-component.webinar-features"
+    },
+    "ourClients": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.our-clients"
+    },
+    "timezoneAbbreviation": {
+      "type": "blocks"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["with-features", "without-features"]
+    }
+  }
+}

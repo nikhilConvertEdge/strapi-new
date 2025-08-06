@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_webinar_component_button_with_sub_titles",
+  "info": {
+    "displayName": "Button With SubTitle"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "subName": {
+      "type": "string"
+    },
+    "redirectUrl": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "href",
+        "button"
+      ]
+    }
+  }
+}

@@ -67,23 +67,14 @@
     },
     "deliveryType": {
       "type": "customField",
-      "options": [
-        "Classroom",
-        "Self Paced",
-        "Live Online Classroom"
-      ],
+      "options": ["Classroom", "Self Paced", "Live Online Classroom"],
       "customField": "plugin::multi-select.multi-select"
     },
     "image": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "tag": {
       "type": "string"
@@ -95,12 +86,7 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "enableLandingPage": {
       "type": "boolean",
@@ -156,22 +142,20 @@
         "section.why-profela",
         "section.who-should-attend-course",
         "landing-page-section.course-features",
-        "section.ct-4-banner"
+        "section.ct-4-banner",
+        "section.ct-6-banner"
       ]
     },
     "scheduleListVerion": {
       "type": "enumeration",
-      "enum": [
-        "V1",
-        "V2",
-        "V3"
-      ],
+      "enum": ["V1", "V2", "V3"],
       "default": "V1"
     },
     "isJobAssistant": {
       "type": "boolean",
       "default": false
     },
+
     "country": {
       "type": "relation",
       "relation": "oneToOne",
@@ -182,9 +166,36 @@
       "relation": "oneToOne",
       "target": "api::timezone.timezone"
     },
+    "planDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.upgrade-plan-pop-up"
+    },
+    "enablePlanDetail": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableRolesInLeadForm": {
+      "type": "boolean",
+      "default": false
+    },
+    "registerForWebinar": {
+      "type": "text"
+    },
+    "registerForWebinarButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-details"
+    },
+    "zohoCrmCourseId": {
+      "type": "string"
+    },
     "masterCourse": {
       "type": "customField",
-      "customField": "plugin::custom-dropdown.custom-dropdown"
+      "customField": "plugin::custom-dropdown.custom-dropdown",
+      "options": {
+        "collectionType": "course_template_1s"
+      }
     }
   }
 }

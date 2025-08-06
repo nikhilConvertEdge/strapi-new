@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_section_slot_details",
+  "info": {
+    "displayName": "slot Details"
+  },
+  "options": {},
+  "attributes": {
+    "timezone": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::timezone.timezone"
+    },
+    "slots": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.slots"
+    }
+  }
+}

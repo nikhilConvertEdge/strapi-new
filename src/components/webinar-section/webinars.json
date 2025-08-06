@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_webinar_section_webinars",
+  "info": {
+    "displayName": "Webinars"
+  },
+  "options": {},
+  "attributes": {
+    "webinarList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "webinar-component.webinar-details"
+    }
+  }
+}

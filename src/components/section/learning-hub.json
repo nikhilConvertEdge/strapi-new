@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_section_learning_hubs",
+  "info": {
+    "displayName": "Learning Hub"
+  },
+  "options": {},
+  "attributes": {
+    "preHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "learningDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.learning-hub-tabs"
+    }
+  }
+}

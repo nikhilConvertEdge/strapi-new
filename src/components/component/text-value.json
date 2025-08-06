@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_component_text_values",
+  "info": {
+    "displayName": "Text Value"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_webinar_section_what_you_will_gains",
+  "info": {
+    "displayName": "What You Will Gain"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.icon-with-title"
+    }
+  }
+}

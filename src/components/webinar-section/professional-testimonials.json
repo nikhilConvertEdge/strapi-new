@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_webinar_section_professional_testimonials",
+  "info": {
+    "displayName": "Professional Testimonials",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "professionalsReviewDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "webinar-component.user-details"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "icons": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "videoContentBlock": {
+      "type": "component",
+      "repeatable": true,
+      "component": "webinar-component.video-content-block"
+    }
+  }
+}

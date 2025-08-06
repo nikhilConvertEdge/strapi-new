@@ -8,6 +8,9 @@
   "attributes": {
     "feature": {
       "type": "string"
+    },
+    "redirectUrl": {
+      "type": "text"
     }
   }
 }

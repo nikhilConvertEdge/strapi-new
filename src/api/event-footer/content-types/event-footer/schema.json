@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "event_footers",
+  "info": {
+    "singularName": "event-footer",
+    "pluralName": "event-footers",
+    "displayName": "Event Footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hostEvents": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.company-links"
+    },
+    "discoverEvents": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.company-links"
+    },
+    "explore": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.company-links"
+    },
+    "upcomingEvents": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.company-links"
+    },
+    "partnerWithUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.company-links"
+    },
+    "CopyRightInfo": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}
